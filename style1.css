@@ -1,0 +1,34 @@
+:root{
+    --primary-bg-color:#00E676;
+    --secondary-bg-color:white;
+
+}
+/* container  */
+#container{
+    position: absolute;
+    background-color:#00E676;
+    width: 100%;
+    height: 100vh;
+}
+/* image */
+#image{
+    align-items: center;
+    margin-top: 6em;
+    margin-left: 28em;
+}
+/* Start button */
+#start{
+    position: relative;
+    align-items: center;
+    border-radius: 40px ;
+    border-width: 5px;
+    border-color: white;
+    color:white;
+    margin-left: 28em;
+    margin-top: 2em;
+    width: 8em;
+    height: 3em;
+}
+@media screen and (max-width: 500px) {
+    
+}
