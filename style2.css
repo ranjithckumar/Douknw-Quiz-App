@@ -53,8 +53,33 @@ body{
     #javaScript,#python,#java{
         height: 20vh;
         width: 20rem;
-        border-color: aqua;
         background-color: #ffffff;
        
     }
+}
+
+#takeTest{
+color: #BDBDBD;  
+font-size: 2vw;
+margin-left: 5%;
+}
+
+#programTitle{
+ /* text-align: center; */
+ margin-left: 5%;
+ font-size: 3vw;
+ margin-top: 3%;
+}
+
+#button{
+    background-color: #00E676;
+    margin-left: 30%;
+    margin-top: 5%;
+    /* height: 7vh; */
+    width: 10rem;
+    height: 8vh;
+    font-size: 1.5vw;
+    color: #ffffff;
+    border-color: #00E676;
+    border-radius: 5%;
 }
