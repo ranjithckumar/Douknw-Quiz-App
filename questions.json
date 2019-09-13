@@ -1,0 +1,167 @@
+{
+	"q1": {
+		"question": "HTML stands for?",
+		"options": [
+			"Hyper Text Markup Language",
+			"High Text Markup Language",
+			"Hyper Tabular Markup Language",
+			"None of these"
+		],
+		"answer": "Hyper Text Markup Language",
+		"type": "html"
+	},
+	"q2": {
+		"question": "which of the following tag is used to mark a begining of paragraph ?",
+		"options": [
+			"<TD>",
+			"<br>",
+			"<P>",
+			"<TR>"
+		],
+		"answer": "<P>",
+		"type": "html"
+	},
+	"q3": {
+		"question": "From which tag descriptive list starts ?",
+		"options": [
+			"<LL>",
+			"<DD>",
+			"<DL>",
+			"<DS>"
+		],
+		"answer": "<DL>",
+		"type": "html"
+	},
+	"q4": {
+		"question": "Correct HTML tag for the largest heading is",
+		"options": [
+			"<head>",
+			"<h6>",
+			"<heading>",
+			"<h1>"
+		],
+		"answer": "<h1>",
+		"type": "html"
+	},
+	"q5": {
+		"question": "The attribute of <form> tag",
+		"options": [
+			"Method",
+			"Action",
+			"Both (a)&(b)",
+			"None of these"
+		],
+		"answer": "Both (a)&(b)",
+		"type": "html"
+	},
+	"q6": {
+		"question": "www is based on which model?",
+		"options": [
+			"Local-server",
+			"Client-server",
+			"3-tier",
+			"None of these"
+		],
+		"answer": "Client-server",
+		"type": "html"
+	},
+	"q7": {
+		"question": "Markup tags tell the web browser",
+		"options": [
+			"How to organise the page",
+			"How to display the page",
+			"How to display message box on page",
+			"None of these"
+		],
+		"answer": "How to display the page",
+		"type": "html"
+	},
+	"q8": {
+		"question": "What are Empty elements and is it valid?",
+		"options": [
+			"No, there is no such terms as Empty Element",
+			"Empty elements are element with no data",
+			"No, it is not valid to use Empty Element",
+			"None of these"
+		],
+		"answer": "Empty elements are element with no data",
+		"type": "html"
+	},
+	"q9": {
+		"question": "Which of the following attributes of text box control allow to limit the maximum character?",
+		"options": [
+			"size",
+			"len",
+			"maxlength",
+			"all of these"
+		],
+		"answer": "maxlength",
+		"type": "html"
+	},
+	"q10": {
+		"question": "Web pages starts with which ofthe following tag?",
+		"options": [
+			"<Body>",
+			"<Title>",
+			"<HTML>",
+			"<Form>"
+		],
+		"answer": "<HTML>",
+		"type": "html"
+    },
+    "q11": {
+		"question": "HTML is a subset of",
+		"options": [
+			"SGMT",
+			"SGML",
+			"SGMD",
+			"None of these"
+		],
+		"answer": "SGML",
+		"type": "html"
+	},
+	"q12": {
+		"question": "Which of the following is a container?",
+		"options": [
+			"<SELECT>",
+			"<BODY>",
+			"<INPUT>",
+			"Both (a) and (b)"
+		],
+		"answer": "Both (a) and (b)",
+		"type": "html"
+	},
+	"q13": {
+		"question": "The attribute, which define the relationship between current document and HREF'ed URL is",
+		"options": [
+			"REL",
+			"URL",
+			"REV",
+			"all of these"
+		],
+		"answer": "REL",
+		"type": "html"
+	},
+	"q14": {
+		"question": "<DT> tag is designed to fit a single line of our web page but <DD> tag will accept a",
+		"options": [
+			"line of text",
+			"full paragraph",
+			"word",
+			"request"
+		],
+		"answer": "full paragraph",
+		"type": "html"
+	},
+	"q15": {
+		"question": "Character encoding is",
+		"options": [
+			"method used to represent numbers in a character",
+			"method used to represent character in a number",
+			"a system that consists of a code which pairs each character with a pattern,sequence of natural numbers or electrical pulse in order to transmit the data",
+			"none of these"
+		],
+		"answer": "a system that consists of a code which pairs each character with a pattern,sequence of natural numbers or electrical pulse in order to transmit the data",
+		"type": "html"
+	}
+}

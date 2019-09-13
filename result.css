@@ -1,0 +1,14 @@
+body{
+    background-color:#ffffff;
+    margin:0;
+}
+
+#testTitle{
+    font-size: 4vw;
+    text-align: center;
+}
+
+#score{
+    text-align: center;
+    margin-top: 3%;
+}
