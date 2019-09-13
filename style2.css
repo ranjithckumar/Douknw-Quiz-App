@@ -15,12 +15,22 @@ body{
     height: 20vh
 }
 
-@media only screen and (max-width: 479px){
+@media only screen and (max-width: 768px){
     #listContainer
     { 
         display: inline;
     }
 }
+
+
+@media only screen and (max-width: 1024px){
+    #listContainer
+    { 
+        display: inline;
+    }
+}
+
+
 #javaScript{
     height: 35vh;
     width: 30%;
@@ -48,38 +58,117 @@ body{
    margin-left: 3%;
 }
 
+#takeTest{
+    color: #BDBDBD;  
+    font-size: 2vw;
+    margin-left: 5%;
+    }
+    
+    #programTitle{
+     /* text-align: center; */
+     margin-left: 5%;
+     font-size: 3vw;
+     margin-top: 3%;
+    }
+    
+    #button{
+        background-color: #00E676;
+        margin-left: 30%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 10rem;
+        height: 8vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 5%;
+    }
+/*ipad*/
+@media screen and (max-width: 1024px){
+    #javaScript,#python,#java{
+        height: 20vh;
+        width: 40rem;
+        background-color: #ffffff;
+       
+    }
+    #button{
+        background-color: #00E676;
+        margin-left: 37%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 10rem;
+        height: 5vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 5%;
+    }
+}
 
-@media only screen and (max-width: 479px){
+/*ipad*/
+@media screen and (max-width: 1024px) and (orientation:landscape){
+    #javaScript,#python,#java{
+        height: 25vh;
+        width: 40rem;
+        background-color: #ffffff;
+       
+    }
+    #button{
+        background-color: #00E676;
+        margin-left: 37%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 10rem;
+        height: 5vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 5%;
+    }
+}
+
+@media only screen and (max-width: 768px){
     #javaScript,#python,#java{
         height: 20vh;
         width: 20rem;
         background-color: #ffffff;
        
     }
+
+    #button{
+        background-color: #00E676;
+        margin-left: 30%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 8rem;
+        height: 5vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 5%;
+    }
 }
 
-#takeTest{
-color: #BDBDBD;  
-font-size: 2vw;
-margin-left: 5%;
-}
 
-#programTitle{
- /* text-align: center; */
- margin-left: 5%;
- font-size: 3vw;
- margin-top: 3%;
-}
 
-#button{
-    background-color: #00E676;
-    margin-left: 30%;
-    margin-top: 5%;
-    /* height: 7vh; */
-    width: 10rem;
-    height: 8vh;
-    font-size: 1.5vw;
-    color: #ffffff;
-    border-color: #00E676;
-    border-radius: 5%;
+@media only screen and (max-width: 768px) and (orientation:landscape) {
+    #javaScript,#python,#java{
+        height: 40vh;
+        width: 20rem;
+        background-color: #ffffff;
+       
+    }
+
+    #button{
+        background-color: #00E676;
+        margin-left: 30%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 8rem;
+        height: 8vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 5%;
+    }
 }
