@@ -1,5 +1,5 @@
 {
-	"q1": {
+	"q0": {
 		"question": "HTML stands for?",
 		"options": [
 			"Hyper Text Markup Language",
@@ -10,6 +10,17 @@
 		"answer": "Hyper Text Markup Language",
 		"type": "html"
 	},
+	"q1": {
+        "question": "Who is making the Web standards ?",
+        "options": [
+            "Internet Explorer",
+            "The World Wide Web Consortium",
+            "Netscape Navigator",
+            "None of the above"
+        ],
+        "answer": "The World Wide Web Consortium",
+        "type": "html"
+    },
 	"q2": {
 		"question": "which of the following tag is used to mark a begining of paragraph ?",
 		"options": [
@@ -163,5 +174,61 @@
 		],
 		"answer": "a system that consists of a code which pairs each character with a pattern,sequence of natural numbers or electrical pulse in order to transmit the data",
 		"type": "html"
-	}
+	},
+	"q16": {
+        "question": "Inside which HTML element do we put the JavaScript?",
+        "options": [
+            "<javascript>",
+            "<scripting>",
+            "<script>",
+            "<js>"
+        ],
+        "answer": "<script>",
+        "type": "js"
+	},
+	"q17": {
+        "question": "Where is the correct place to insert a JavaScript?",
+        "options": [
+            "the <body> section",
+            "the <head> section",
+            "both <body> and the <body> section",
+            "the <title> section"
+        ],
+        "answer": "both <body> and the <body> section",
+        "type": "js"
+	},
+	"q18": {
+        "question": "What is the correct syntax for referring to an external script called xxx.js?",
+        "options": [
+            "<script srs=xxx.js> ",
+            "<script href=xxx.js>",
+            "<script src=xxx.js> ",
+            "<script name=xxx.js> "
+        ],
+        "answer": "<script src=xxx.js> ",
+        "type": "js"
+	},
+	"q19": {
+        "question": "How do you write Hello in an alert box?",
+        "options": [
+            "msg('Hello')",
+            "msgalert('Hello')",
+            " alert('Hello')",
+            "windowalert('Hello') "
+        ],
+        "answer": "alert('Hello')",
+        "type": "js"
+	},
+	"q20": {
+        "question": "How do you create a function in JavaScript?",
+        "options": [
+            "function:myfunction()",
+            "function myfunction()",
+            " function=myfunction()",
+            "functions myfunction() "
+        ],
+        "answer": "function myfunction()",
+        "type": "js"
+    }
+	
 }
