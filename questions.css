@@ -2,9 +2,11 @@
   #time{
       float:inline-end;
       margin-left:75em;
+      font-weight: bold;
   }
   #section-number{
       float: inline-start;
+      font-weight: bold;
       
   }
   #num{
@@ -17,14 +19,15 @@
   #img-backward{
       width: 40px;
       height: 30px;
-      border-radius:18px;
+      border-radius:50%;
       border-color: darkgray;
       margin-left:10px;
   }
   #img-forward{
         width: 40px;
+        transform: rotate(180deg);
         height: 30px;
-        border-radius:18px;
+        border-radius:50%;
         border-color:black;
   }
   #question{
