@@ -108,5 +108,60 @@
 		],
 		"answer": "<HTML>",
 		"type": "html"
+    },
+    "q11": {
+		"question": "HTML is a subset of",
+		"options": [
+			"SGMT",
+			"SGML",
+			"SGMD",
+			"None of these"
+		],
+		"answer": "SGML",
+		"type": "html"
+	},
+	"q12": {
+		"question": "Which of the following is a container?",
+		"options": [
+			"<SELECT>",
+			"<BODY>",
+			"<INPUT>",
+			"Both (a) and (b)"
+		],
+		"answer": "Both (a) and (b)",
+		"type": "html"
+	},
+	"q13": {
+		"question": "The attribute, which define the relationship between current document and HREF'ed URL is",
+		"options": [
+			"REL",
+			"URL",
+			"REV",
+			"all of these"
+		],
+		"answer": "REL",
+		"type": "html"
+	},
+	"q14": {
+		"question": "<DT> tag is designed to fit a single line of our web page but <DD> tag will accept a",
+		"options": [
+			"line of text",
+			"full paragraph",
+			"word",
+			"request"
+		],
+		"answer": "full paragraph",
+		"type": "html"
+	},
+	"q15": {
+		"question": "Character encoding is",
+		"options": [
+			"method used to represent numbers in a character",
+			"method used to represent character in a number",
+			"a system that consists of a code which pairs each character with a pattern,sequence of natural numbers or electrical pulse in order to transmit the data",
+			"none of these"
+		],
+		"answer": "a system that consists of a code which pairs each character with a pattern,sequence of natural numbers or electrical pulse in order to transmit the data",
+		"type": "html"
 	}
 }
