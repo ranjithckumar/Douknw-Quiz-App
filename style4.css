@@ -1,0 +1,131 @@
+
+  #time{
+      float:inline-end;
+      margin-left:75em;
+  }
+  #section-number{
+      float: inline-start;
+      
+  }
+  #num{
+      margin-top: 1em;
+  } 
+  #number{
+      margin-top: 10px;
+
+  }
+  #img-backward{
+      width: 40px;
+      height: 30px;
+      border-radius:18px;
+      border-color: darkgray;
+      margin-left:10px;
+  }
+  #img-forward{
+        width: 40px;
+        height: 30px;
+        border-radius:18px;
+        border-color:black;
+  }
+  #question{
+      flex-flow: row;
+      
+  }
+ 
+  #option1{
+      width: 13em;
+      height: 2.5em;
+      border:2px solid #00E676;
+      border-radius: 15px;
+      background-color:#CFD8DC;
+      margin-top: 80px;
+  }
+  #option2,#option3,#option4{
+    width: 13em;
+    height: 2.5em;
+    border:2px solid #00E676;
+    border-radius: 15px;
+    background-color:#CFD8DC;
+    margin-top: 40px;
+
+}
+@media only screen and (max-width: 1200px){
+    #time{
+        float:inline-end;
+        margin-left:75em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+}
+@media only screen and (max-width: 1125px) and (min-width:961px) {
+    #time{
+        float:inline-end;
+        margin-left:52em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+}
+@media only screen and (max-width: 960px){
+    #time{
+        float:inline-end;
+        margin-left:50em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+}
+@media only screen and (max-width: 960px)and (min-width:780px) {
+    #time{
+        float:inline-end;
+        margin-left:40em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+}
+@media  screen and (max-width: 793px) and (min-width:620px){
+    #time{
+        float:inline-end;
+        margin-left:30em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+}
+@media  screen and (max-width: 633px) and (min-width:460px){
+    #time{
+        float:inline-end;
+        margin-left:20em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+}
+@media  screen and (max-width: 473px) and (min-width:350px){
+    #time{
+        float:inline-end;
+        margin-left:15em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+}
+@media  screen and (max-width: 394px) and (min-width:240px){
+    #time{
+        float:inline-end;
+        margin-left:6em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+}
