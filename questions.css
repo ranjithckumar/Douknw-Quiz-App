@@ -36,16 +36,16 @@
   }
  
   #option1{
-      width: 13em;
-      height: 2.5em;
+      width: 20em;
+      height: 3em;
       border:2px solid #00E676;
       border-radius: 15px;
       background-color:#CFD8DC;
       margin-top: 80px;
   }
   #option2,#option3,#option4{
-    width: 13em;
-    height: 2.5em;
+    width: 20em;
+    height: 3em;
     border:2px solid #00E676;
     border-radius: 15px;
     background-color:#CFD8DC;
@@ -131,4 +131,12 @@
         float: inline-start;
         
     }
+}
+
+#submitButton,#sectionButton{
+    width: 8rem;
+    height: 8vh;
+    margin-top:5%;
+    background-color: #00E676;
+    border-radius: 10%;
 }
