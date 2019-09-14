@@ -1,16 +1,18 @@
-let question = 1;
-let ar = [];
-let count = 1;
-$("document").ready(function(){
-let htm = localStorage.getItem("htm");
-let sec = localStorage.getItem("sec");
-localStorage.clear();
-localStorage.setItem("htm",htm);
-localStorage.setItem("sec",sec);
-for(let i = 1;i <= 10;i++)
-getJSON();
-})
 
+// let ar = [];
+// let count = 1;
+// $("document").ready(function(){
+// let htm = localStorage.getItem("htm");
+// let sec = localStorage.getItem("sec");
+// localStorage.clear();
+// localStorage.setItem("htm",htm);
+// localStorage.setItem("sec",sec);
+
+// })
+
+
+let question = 1;
+if(localStorage.getItem("sec") == 1){
 let firstQuestion = JSON.parse(localStorage.getItem(1));
 $("#question").text(firstQuestion["question"]);
 $("#opt1").text(firstQuestion["options"][0]);
@@ -40,7 +42,7 @@ $("#img-forward").click(function(){
     if(question != 10)
     {
         $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
-        localStorage.setItem("a"+question,answer);
+        // localStorage.setItem("a"+question,answer);
         question++;
         let requiredQuestion = JSON.parse(localStorage.getItem(question));
         // console.log(requiredQuestion)
@@ -52,39 +54,116 @@ $("#img-forward").click(function(){
         $("#opt4").text(requiredQuestion["options"][3]);
         
     }
-    else if(question == 10){
-        localStorage.setItem("a"+question,answer);
-    }
+    // else if(question == 10){
+    //     // localStorage.setItem("a"+question,answer);
+    // }
 })
+}
 
-function getJSON(){
-    $.getJSON('questions.json',function(json){
-        obj = json;
-        const keys = Object.keys(obj);
-        let randIndex = Math.floor(Math.random()*keys.length)
-        let b =  obj["q"+randIndex];
-        flag = true;
-        while(flag)
+
+if(localStorage.getItem("sec") == 2){
+    question = 11;
+    let firstQuestion = JSON.parse(localStorage.getItem(11));
+    $("#question").text(firstQuestion["question"]);
+    $("#opt1").text(firstQuestion["options"][0]);
+    $("#opt2").text(firstQuestion["options"][1]);
+    $("#opt3").text(firstQuestion["options"][2]);
+    $("#opt4").text(firstQuestion["options"][3]);
+    
+    let answer;
+    $("#img-backward").click(function(){
+        if(question>11)
         {
-            if(b["type"]==="html" && !localStorage.hasOwnProperty("q"+randIndex))
-            {
-             flag = false;
-            }
-            else{
-                randIndex = Math.floor(Math.random()*keys.length);
-                b =  obj["q"+randIndex];
-            }
+            question--;
+            $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
+            let requiredQuestion = JSON.parse(localStorage.getItem(question));
+            console.log(requiredQuestion)
+            $("#num").text(question);
+            $("#question").text(requiredQuestion["question"]);
+            $("#opt1").text(requiredQuestion["options"][0]);
+            $("#opt2").text(requiredQuestion["options"][1]);
+            $("#opt3").text(requiredQuestion["options"][2]);
+            $("#opt4").text(requiredQuestion["options"][3]);
+            
         }
-       
-        localStorage.setItem(count,JSON.stringify(b));
-        localStorage.setItem("q"+randIndex,"yes");
-        count++;
-
     })
+    
+    let questionNumber = 1;
+    $("#img-forward").click(function(){
+        if(question != 20)
+        {
+            $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
+            // localStorage.setItem("a"+question,answer);
+            question++;
+            let requiredQuestion = JSON.parse(localStorage.getItem(question));
+            // console.log(requiredQuestion)
+            questionNumber++;
+            $("#num").text(questionNumber);
+            
+            $("#question").text(requiredQuestion["question"]);
+            $("#opt1").text(requiredQuestion["options"][0]);
+            $("#opt2").text(requiredQuestion["options"][1]);
+            $("#opt3").text(requiredQuestion["options"][2]);
+            $("#opt4").text(requiredQuestion["options"][3]);
+            
+        }
+        // else if(question == 10){
+        //     // localStorage.setItem("a"+question,answer);
+        // }
+    })
+    }
+    
 
- }
-
-
+    
+    if(localStorage.getItem("sec") == 3){
+        question = 21;
+    let firstQuestion = JSON.parse(localStorage.getItem(21));
+    $("#question").text(firstQuestion["question"]);
+    $("#opt1").text(firstQuestion["options"][0]);
+    $("#opt2").text(firstQuestion["options"][1]);
+    $("#opt3").text(firstQuestion["options"][2]);
+    $("#opt4").text(firstQuestion["options"][3]);
+    
+    let answer;
+    $("#img-backward").click(function(){
+        if(question>21)
+        {
+            question--;
+            $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
+            let requiredQuestion = JSON.parse(localStorage.getItem(question));
+            console.log(requiredQuestion)
+            $("#num").text(question);
+            $("#question").text(requiredQuestion["question"]);
+            $("#opt1").text(requiredQuestion["options"][0]);
+            $("#opt2").text(requiredQuestion["options"][1]);
+            $("#opt3").text(requiredQuestion["options"][2]);
+            $("#opt4").text(requiredQuestion["options"][3]);
+            
+        }
+    })
+    
+    $("#img-forward").click(function(){
+        if(question != 30)
+        {
+            $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
+            // localStorage.setItem("a"+question,answer);
+            question++;
+            let requiredQuestion = JSON.parse(localStorage.getItem(question));
+            // console.log(requiredQuestion)
+            $("#num").text(question);
+            $("#question").text(requiredQuestion["question"]);
+            $("#opt1").text(requiredQuestion["options"][0]);
+            $("#opt2").text(requiredQuestion["options"][1]);
+            $("#opt3").text(requiredQuestion["options"][2]);
+            $("#opt4").text(requiredQuestion["options"][3]);
+            
+        }
+        // else if(question == 10){
+        //     // localStorage.setItem("a"+question,answer);
+        // }
+    })
+    }
+    
 
  $("#option1").click(function(){
   answer = $("#opt1").text();

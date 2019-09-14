@@ -8,6 +8,7 @@ $("document").ready(function(){
     }
     $("#marks").text(score);
     localStorage.removeItem("htm");
+    localStorage.clear();
 })
 
 

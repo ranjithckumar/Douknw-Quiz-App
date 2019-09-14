@@ -229,6 +229,293 @@
         ],
         "answer": "function myfunction()",
         "type": "js"
-    }
-	
+	},
+	"q21": {
+        "question": "What does CSS stand for?",
+        "options": [
+            "Colorfull style sheets",
+            "Creative style sheets",
+            "Cascading style sheets",
+            "Computer style sheets"
+        ],
+        "answer": "Cascading style sheets",
+        "type": "css"
+	},
+	"q22": {
+        "question": "If we want define style for an unique element, then which css selector will we use ?",
+        "options": [
+            "id",
+            "text",
+            "class",
+            "name"
+        ],
+        "answer": "id",
+        "type": "css"
+    },
+	"q23": {
+        "question": "If we don't want to allow a floating div to the left side of an element, which css property will we use ?",
+        "options": [
+            "margin",
+            "clear",
+            "float",
+            "padding"
+        ],
+        "answer": "clear",
+        "type": "css"
+    },
+	"q24": {
+        "question": "If we want to wrap a block of text around an image, which css property will we use ?",
+        "options": [
+            "wrap",
+            "push",
+            "float",
+            "align"
+        ],
+        "answer": "float",
+        "type": "css"
+    },
+	"q25": {
+        "question": "If we want to show an Arrow as cursor, then which value we will use ?",
+        "options": [
+            "pointer",
+            "arrow",
+            "default",
+            "arr"
+        ],
+        "answer": "default",
+        "type": "css"
+	},
+	"q26": {
+        "question": "If we want to use a nice looking green dotted border around an image, which css property will we use?",
+        "options": [
+            "border-color",
+            "border-decoration",
+            "border-line",
+            "border-style"
+        ],
+        "answer": "border-style",
+        "type": "css"
+	},
+	"q27": {
+        "question": "Which of the following properties will we use to display border around a cell without any content ?",
+        "options": [
+            "empty-cell",
+            "void-cell",
+            "blank-cell",
+            "content-cell"
+        ],
+        "answer": "empty-cell",
+        "type": "css"
+	},
+	"q28": {
+        "question": "What should be the table width, so that the width of a table adjust to the current width of the browser window?",
+        "options": [
+            "100%",
+            "1024px",
+            "624px",
+            "full-screen"
+        ],
+        "answer": "100%",
+        "type": "css"
+    },
+	"q29": {
+        "question": "Which attribute can be added to many HTML / XHTML elements to identify them as a member of a specific group ?",
+        "options": [
+            "id",
+            "div",
+            "class",
+            "span"
+        ],
+        "answer": "class",
+        "type": "css"
+    },
+	"q30": {
+        "question": "Which css property you will use if you want to add some margin between a DIV's border and its inner text ?",
+        "options": [
+            "spacing",
+            "margin",
+            "inner-margin",
+            "padding"
+        ],
+        "answer": "padding",
+        "type": "css"
+    },
+	"q31": {
+        "question": "Which CSS property is used to control the text size of an element ?",
+        "options": [
+            "font-style",
+            "font-size",
+            "text-size",
+            "text-style"
+        ],
+        "answer": "font-size",
+        "type": "css"
+	},
+	"q32": {
+		"question": "Which of the following selector selects the elements that are checked?",
+		"options": [
+			"E ~ F",
+			"::after",
+			":checked",
+			"none of the above"
+		],
+		"answer": ":checked",
+		"type": "css"
+	},
+
+	"q33": {
+		"question": "Which of the following selector selects an element that has no children?",
+		"options": [
+			":empty",
+			":inheritance",
+			":child",
+			":no-child"
+		],
+		"answer": ":empty",
+		"type": "css"
+	},
+	"q34": {
+		"question": "Which of the following selectors selects direct descendents?",
+		"options": [
+			"E &gt; F",
+			"E F",
+			"E+F",
+			"E~F"
+		],
+		"answer": "E &gt; F",
+		"type": "css"
+	},
+	"q35": {
+		"question": "Which of the following elements are block and inline elements, respectively, that have no particular rendering?",
+		"options": [
+			"div",
+			"box model",
+			"span",
+			"div and span"
+		],
+		"answer": "div and span",
+		"type": "css"
+	},
+	"q36": {
+        "question": "How to write an IF statement in JavaScript?",
+        "options": [
+            "if i==5 then",
+            "if i=5 then",
+            " if i==5",
+            "if(i==5) "
+        ],
+        "answer": "if(i==5)",
+        "type": "js"
+	},
+	"q37": {
+        "question": "How do you round the number 7.25, to the nearest integer?",
+        "options": [
+            "math.round(7.5)",
+            "Math.rnd(7.5)",
+            "Math.round(7.5)",
+            "round(7.5) "
+        ],
+        "answer": "Math.round(7.5)",
+        "type": "js"
+	},
+	"q38": {
+        "question": "How do you find the number with the highest value of x and y?",
+        "options": [
+            "top(x,y",
+            "ceil(x,y",
+            "Math.maxm(x,y)",
+            "Math.max(x,y)"
+        ],
+        "answer": "Math.max(x,y)",
+        "type": "js"
+	},
+	"q39": {
+        "question": "How do you find the number with the highest value of x and y?",
+        "options": [
+            "top(x,y)",
+            "ceil(x,y)",
+            "Math.maxm(x,y)",
+            "Math.max(x,y)"
+        ],
+        "answer": "Math.max(x,y)",
+        "type": "js"
+	},
+	"q40": {
+        "question": "Which event occurs when the user clicks on an HTML element?",
+        "options": [
+            "onmouseover",
+            "onmouseclick",
+            "onchange",
+            "onclick"
+        ],
+        "answer": "onclick",
+        "type": "js"
+	},
+	"q41": {
+        "question": "How do you declare a JavaScript variable?",
+        "options": [
+            "variable carName",
+            "var carName",
+            "v carName",
+            "lets carName"
+        ],
+        "answer": "var carName",
+        "type": "js"
+	},
+	"q42": {
+		"question": "Which of the following is not a reserved word in JavaScript?",
+		"options": [
+			"interface",
+			"throws",
+			"program",
+			"short"
+		],
+		"answer": "program",
+		"type": "js"
+	},
+	"q43": {
+		"question": "Which of the following is an advantage of using JavaScript?",
+		"options": [
+			"Increased interactivity.",
+			"Less server interaction",
+			"Immediate feedback from the users.",
+			"All of the above."
+		],
+		"answer": "All of the above.",
+		"type": "js"
+	},
+	"q44": {
+		"question": "Which function of an Array object calls a function for each element in the array?",
+		"options": [
+			"forEach()",
+			"every()",
+			"forEvery()",
+			"each()."
+		],
+		"answer": "forEach()",
+		"type": "js"
+	},
+	"q45": {
+		"question": " Which was the first browser to support JavaScript?",
+		"options": [
+			"Mozilla Firefox",
+			"Chrome",
+			"Safari",
+			"IE"
+		],
+		"answer": "Netscape",
+		"type": "js"
+	},
+	"q46": {
+		"question": "What is the method in JavaScript used to remove the whitespace at the beginning and end of any string ?",
+		"options": [
+			"strip()",
+			"trim()",
+			"stripped()",
+			"trimmed()"
+		],
+		"answer": "trim()",
+		"type": "js"
+	}
+
 }
