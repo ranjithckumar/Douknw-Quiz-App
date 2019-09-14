@@ -214,7 +214,7 @@ if(localStorage.getItem("sec") == 2){
        location.href = 'section.html'
    })
 
-    var timer2 = "10:01";
+    var timer2 = "5:01";
     var interval = setInterval(function() {
 
     var timer = timer2.split(':');
