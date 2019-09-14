@@ -5,3 +5,5 @@ This repository consists of a quiz application which provides an enlightened use
 ## Authors
 Ranjith Kumar C\
 Gokul R
+
+![firstImage](ReadmeImages\one.png)
