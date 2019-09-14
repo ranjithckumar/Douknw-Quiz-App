@@ -169,7 +169,7 @@
 		"options": [
 			"method used to represent numbers in a character",
 			"method used to represent character in a number",
-			"a system that consists of a code which pairs each character with a pattern,sequence of natural numbers or electrical pulse in order to transmit the data",
+			"a system that consists of a code which pairs each character with a pattern",
 			"none of these"
 		],
 		"answer": "a system that consists of a code which pairs each character with a pattern,sequence of natural numbers or electrical pulse in order to transmit the data",
@@ -500,7 +500,7 @@
 		"options": [
 			"Mozilla Firefox",
 			"Chrome",
-			"Safari",
+			"Netscape",
 			"IE"
 		],
 		"answer": "Netscape",
