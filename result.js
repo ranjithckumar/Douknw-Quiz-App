@@ -7,4 +7,5 @@ $("document").ready(function(){
           score++;
     }
     $("#marks").text(score);
+    localStorage.removeItem("htm");
 })

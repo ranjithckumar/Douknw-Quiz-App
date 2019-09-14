@@ -2,7 +2,9 @@ let question = 1;
 let ar = [];
 let count = 1;
 $("document").ready(function(){
+let htm = localStorage.getItem("htm");
 localStorage.clear();
+localStorage.setItem("htm",htm);
 for(let i = 1;i <= 10;i++)
 getJSON();
 })
@@ -39,7 +41,7 @@ $("#img-forward").click(function(){
         localStorage.setItem("a"+question,answer);
         question++;
         let requiredQuestion = JSON.parse(localStorage.getItem(question));
-        console.log(requiredQuestion)
+        // console.log(requiredQuestion)
         $("#num").text(question);
         $("#question").text(requiredQuestion["question"]);
         $("#opt1").text(requiredQuestion["options"][0]);
@@ -59,11 +61,25 @@ function getJSON(){
         const keys = Object.keys(obj);
         let randIndex = Math.floor(Math.random()*keys.length)
         let b =  obj["q"+randIndex];
-        if(ar.length <= 10)
+        flag = true;
+        
+
+        while(flag)
         {
-        localStorage.setItem(count,JSON.stringify(b));
-        count++;
+            if(b["type"]==="html" && !localStorage.hasOwnProperty("q"+randIndex))
+            {
+             flag = false;
+            }
+            else{
+                randIndex = Math.floor(Math.random()*keys.length);
+                b =  obj["q"+randIndex];
+            }
         }
+        
+        localStorage.setItem(count,JSON.stringify(b));
+        localStorage.setItem("q"+randIndex,"yes");
+        count++;
+
     })
 
  }
