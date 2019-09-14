@@ -65,6 +65,7 @@ $("#img-forward").click(function(){
 
 
 if(localStorage.getItem("sec") == 2){
+    $("#section-number").text("Section 2");
     question = 11;
     let firstQuestion = JSON.parse(localStorage.getItem(11));
     $("#question").text(firstQuestion["question"]);
@@ -73,7 +74,7 @@ if(localStorage.getItem("sec") == 2){
     $("#opt3").text(firstQuestion["options"][2]);
     $("#opt4").text(firstQuestion["options"][3]);
     
-    let answer;
+    
     $("#img-backward").click(function(){
         if(question>11)
         {
@@ -121,6 +122,7 @@ if(localStorage.getItem("sec") == 2){
 
     
     if(localStorage.getItem("sec") == 3){
+        $("#section-number").text("Section 3");
         question = 21;
     let firstQuestion = JSON.parse(localStorage.getItem(21));
     $("#question").text(firstQuestion["question"]);
