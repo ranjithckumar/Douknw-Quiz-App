@@ -12,3 +12,29 @@ body{
     text-align: center;
     margin-top: 3%;
 }
+
+#analyse{
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 5%;
+}
+
+#analyseContainer{
+    margin-top: 8%;
+}
+
+#html{
+    text-align: center;
+}
+
+#css{
+    margin-left: 20%;
+}
+
+#cssScoreCard{
+    margin-left: 5%;
+}
+
+#jsScoreCard{
+    margin-left: 15%;
+}
