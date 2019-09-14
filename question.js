@@ -3,8 +3,10 @@ let ar = [];
 let count = 1;
 $("document").ready(function(){
 let htm = localStorage.getItem("htm");
+let sec = localStorage.getItem("sec");
 localStorage.clear();
 localStorage.setItem("htm",htm);
+localStorage.setItem("sec",sec);
 for(let i = 1;i <= 10;i++)
 getJSON();
 })
@@ -62,8 +64,6 @@ function getJSON(){
         let randIndex = Math.floor(Math.random()*keys.length)
         let b =  obj["q"+randIndex];
         flag = true;
-        
-
         while(flag)
         {
             if(b["type"]==="html" && !localStorage.hasOwnProperty("q"+randIndex))
@@ -75,7 +75,7 @@ function getJSON(){
                 b =  obj["q"+randIndex];
             }
         }
-        
+       
         localStorage.setItem(count,JSON.stringify(b));
         localStorage.setItem("q"+randIndex,"yes");
         count++;
