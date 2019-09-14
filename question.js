@@ -12,6 +12,7 @@
 
 
 let question = 1;
+let questionNumber = 1;
 if(localStorage.getItem("sec") == 1){
 let firstQuestion = JSON.parse(localStorage.getItem(1));
 $("#question").text(firstQuestion["question"]);
@@ -25,10 +26,11 @@ $("#img-backward").click(function(){
     if(question>1)
     {
         question--;
+        questionNumber--;
         $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
         let requiredQuestion = JSON.parse(localStorage.getItem(question));
         console.log(requiredQuestion)
-        $("#num").text(question);
+        $("#num").text(questionNumber);
         $("#question").text(requiredQuestion["question"]);
         $("#opt1").text(requiredQuestion["options"][0]);
         $("#opt2").text(requiredQuestion["options"][1]);
@@ -44,9 +46,10 @@ $("#img-forward").click(function(){
         $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
         // localStorage.setItem("a"+question,answer);
         question++;
+        questionNumber++;
         let requiredQuestion = JSON.parse(localStorage.getItem(question));
         // console.log(requiredQuestion)
-        $("#num").text(question);
+        $("#num").text(questionNumber);
         $("#question").text(requiredQuestion["question"]);
         $("#opt1").text(requiredQuestion["options"][0]);
         $("#opt2").text(requiredQuestion["options"][1]);
@@ -75,10 +78,11 @@ if(localStorage.getItem("sec") == 2){
         if(question>11)
         {
             question--;
+            questionNumber--;
             $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
             let requiredQuestion = JSON.parse(localStorage.getItem(question));
             console.log(requiredQuestion)
-            $("#num").text(question);
+            $("#num").text(questionNumber);
             $("#question").text(requiredQuestion["question"]);
             $("#opt1").text(requiredQuestion["options"][0]);
             $("#opt2").text(requiredQuestion["options"][1]);
@@ -88,16 +92,17 @@ if(localStorage.getItem("sec") == 2){
         }
     })
     
-    let questionNumber = 1;
+    
     $("#img-forward").click(function(){
         if(question != 20)
         {
             $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
             // localStorage.setItem("a"+question,answer);
             question++;
+            questionNumber++;
             let requiredQuestion = JSON.parse(localStorage.getItem(question));
             // console.log(requiredQuestion)
-            questionNumber++;
+            
             $("#num").text(questionNumber);
             
             $("#question").text(requiredQuestion["question"]);
@@ -129,10 +134,11 @@ if(localStorage.getItem("sec") == 2){
         if(question>21)
         {
             question--;
+            questionNumber--;
             $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
             let requiredQuestion = JSON.parse(localStorage.getItem(question));
             console.log(requiredQuestion)
-            $("#num").text(question);
+            $("#num").text(questionNumber);
             $("#question").text(requiredQuestion["question"]);
             $("#opt1").text(requiredQuestion["options"][0]);
             $("#opt2").text(requiredQuestion["options"][1]);
@@ -148,9 +154,10 @@ if(localStorage.getItem("sec") == 2){
             $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
             // localStorage.setItem("a"+question,answer);
             question++;
+            questionNumber++;
             let requiredQuestion = JSON.parse(localStorage.getItem(question));
             // console.log(requiredQuestion)
-            $("#num").text(question);
+            $("#num").text(questionNumber);
             $("#question").text(requiredQuestion["question"]);
             $("#opt1").text(requiredQuestion["options"][0]);
             $("#opt2").text(requiredQuestion["options"][1]);
