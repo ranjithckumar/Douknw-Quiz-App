@@ -6,4 +6,4 @@ This repository consists of a quiz application which provides an enlightened use
 Ranjith Kumar C\
 Gokul R
 
-![firstImage](ReadmeImages\one.png)
+![firstImage](ReadmeImages/one.png)
