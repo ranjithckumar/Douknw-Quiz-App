@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
+
 var temp = [];
 $(document).ready(function(){
     $.ajax({
@@ -150,26 +147,23 @@ var temp = [];
 function getJSONHtml(json){
            let randIndex = Math.floor(Math.random()*json.length)
            let b =  "q"+randIndex;
-           console.log(json)
            let x = json;
-           console.log(b);
-           console.log(x[randIndex][b]);
-           flag = true;
-           while(flag)
-           {
-               if(json[randIndex]["type"]==="html" && !localStorage.hasOwnProperty("q"+randIndex))
-               {
-                flag = false;
-               }
-               else{
-                   randIndex = Math.floor(Math.random()*json.length);
-                   b =  json[randIndex]["q"+randIndex];
-               }
-           }
+           let c = x[randIndex][b];
+        //    flag = true;
+        //    while(flag)
+        //    {
+        //        if(x[randIndex]["type"]==="html" && !localStorage.hasOwnProperty(b))
+        //        {
+        //         flag = false;
+        //        }
+        //        else{
+        //            randIndex = Math.floor(Math.random()*json.length);
+        //            c =  json[randIndex]["q"+randIndex];
+        //        }
+        //    }
           
-        //    localStorage.setItem(count,JSON.stringify(b));
-        //    localStorage.setItem("q"+randIndex,"yes");
-           count++;
+           localStorage.setItem(0,JSON.stringify(c));
+           localStorage.setItem("q"+randIndex,"yes");
+        //    count++;
     }
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+
