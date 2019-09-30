@@ -1,33 +1,40 @@
+let htmlAr = [];
+let cssAr = [];
+let jsAr = [];
 
-var temp = [];
 $(document).ready(function(){
     $.ajax({
         url:'http://localhost:9000/',
         type: 'GET',
         success:function(data){
-            getJSONHtml(data);
-            new testing(data);
+            let count1 = -1;
+            let htmlQuestions = data.filter(dt=>{count1++
+                return dt["q"+count1]["type"] === 'html';
+             })
+             randomPicker(htmlQuestions,htmlAr);
+             count1 = -1;
+             let cssQuestions = data.filter(dt=>{count1++
+                return dt["q"+count1]["type"] === 'css';
+             })
+             randomPicker(cssQuestions,cssAr);
+            count1 = -1;
+             let jsQuestions = data.filter(dt=>{count1++
+                return dt["q"+count1]["type"] === 'js';
+             })
+             randomPicker(jsQuestions,jsAr);
         }
     })
  
   });
-var temp = [];
-  class testing{
-      constructor(m)
-      {
-          temp.push(m);
-      }
-  }
-  console.log(temp);
 
-// if(localStorage.getItem("htm")==="yes")
-//     $("#htm").css("opacity",0.5);
+if(localStorage.getItem("htm")==="yes")
+    $("#htm").css("opacity",0.5);
  
-//  if(localStorage.getItem("cs")==="yes")
-//     $("#cs").css("opacity",0.5);
+ if(localStorage.getItem("cs")==="yes")
+    $("#cs").css("opacity",0.5);
 
-//  if(localStorage.getItem("js")==="yes")
-//     $("#jst").css("opacity",0.5);
+ if(localStorage.getItem("js")==="yes")
+    $("#jst").css("opacity",0.5);
 
 //  let count = 1;
 // $("#htm").click(function(){
@@ -144,26 +151,24 @@ var temp = [];
 // }
 
 
-function getJSONHtml(json){
-           let randIndex = Math.floor(Math.random()*json.length)
-           let b =  "q"+randIndex;
-           let x = json;
-           let c = x[randIndex][b];
-        //    flag = true;
-        //    while(flag)
-        //    {
-        //        if(x[randIndex]["type"]==="html" && !localStorage.hasOwnProperty(b))
-        //        {
-        //         flag = false;
-        //        }
-        //        else{
-        //            randIndex = Math.floor(Math.random()*json.length);
-        //            c =  json[randIndex]["q"+randIndex];
-        //        }
-        //    }
-          
-           localStorage.setItem(0,JSON.stringify(c));
-           localStorage.setItem("q"+randIndex,"yes");
-        //    count++;
-    }
+// function getJSONHtml(json,ar){
+//         //   localStorage.setItem(random.b,"yes");
+//         console.log(json)
+        
+      
+      
+        
+//         //    localStorage.setItem(0,JSON.stringify(c));
+//         //    localStorage.setItem("q"+randIndex,"yes");
+//         //    count++;
+//     }
 
+let randomPicker=(json,ar)=>{
+    for(let i = 0;i < 10;i++){
+    let randIndex = Math.floor(Math.random()*json.length)
+    ar.push(json[randIndex])
+    json.splice(randIndex,1);
+    }
+    console.log(ar);
+    return ar;
+}
