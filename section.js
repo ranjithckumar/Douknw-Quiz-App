@@ -36,132 +36,26 @@ if(localStorage.getItem("htm")==="yes")
  if(localStorage.getItem("js")==="yes")
     $("#jst").css("opacity",0.5);
 
-//  let count = 1;
-// $("#htm").click(function(){
-//     localStorage.setItem("htm","yes");
-//     localStorage.setItem("sec",1);
-    
-//    //  console.log("here1")
-//    // location.href='questions.html'; 
-   
-//  })
-// let count1 = 11;
-// $("#cs").click(function(){
-//    localStorage.setItem("cs","yes");
-//     localStorage.setItem("sec",2);
-
-    
-//     for(let i = 11;i <= 20;i++)
-//     getJSONCss();
-
-//     let delay = 1000; 
-//     setTimeout(function(){ location.href='questions.html'; }, delay);
-
-// })
-
-// let count2 = 21;
-// $("#jst").click(function(){
-//    localStorage.setItem("js","yes");
-//     localStorage.setItem("sec",3);
-
-//     for(let i = 11;i <= 20;i++)
-//     getJSONJs();
-    
-//     // let delay = 1000; 
-//     // setTimeout(function(){ location.href='questions.html'; }, delay);
-// })
- 
-// // 
+    $("#htm").click(()=>{
+      localStorage.setItem("htm","yes");
+      localStorage.setItem("htmlArray",JSON.stringify(htmlAr));
+     location.href='questions.html?html';
+   })
+  
+  $("#cs").click(()=>{
+     localStorage.setItem("cs","yes");
+     localStorage.setItem("cssArray",JSON.stringify(cssAr));
+     location.href='questions.html?css';
+  })
+  
+  
+  $("#jst").click(function(){
+     localStorage.setItem("js","yes");
+     localStorage.setItem("jsArray",JSON.stringify(jsAr));
+     location.href='questions.html?js';
+  })
 
 
-
-// function getJSONCss(){
-//    $.getJSON('questions.json',function(json){
-//        obj = json;
-//        const keys = Object.keys(obj);
-//        let randIndex = Math.floor(Math.random()*keys.length)
-//        let b =  obj["q"+randIndex];
-//        flag = true;
-//        while(flag)
-//        {
-//            if(b["type"]==="css" && !localStorage.hasOwnProperty("q"+randIndex))
-//            {
-//             flag = false;
-//            }
-//            else{
-//                randIndex = Math.floor(Math.random()*keys.length);
-//                b =  obj["q"+randIndex];
-//            }
-//        }
-      
-//        localStorage.setItem(count1,JSON.stringify(b));
-//        localStorage.setItem("q"+randIndex,"yes");
-//        count1++;
-//    })
-// }
-
-// // obj = json;
-// //        const keys = Object.keys(obj);
-// //        let randIndex = Math.floor(Math.random()*keys.length)
-// //        let b =  obj["q"+randIndex];
-// //        flag = true;
-// //        while(flag)
-// //        {
-// //            if(b["type"]==="js" && !localStorage.hasOwnProperty("q"+randIndex))
-// //            {
-// //             flag = false;
-// //            }
-// //            else{
-// //                randIndex = Math.floor(Math.random()*keys.length);
-// //                b =  obj["q"+randIndex];
-// //            }
-// //        }
-      
-// //        localStorage.setItem(count2,JSON.stringify(b));
-// //        localStorage.setItem("q"+randIndex,"yes");
-// //        count2++;
-
-
-
-// function getJSONJs(){
-//     $.ajax({
-//         url:'http://localhost:9000/',
-//         type: 'GET',
-//         success:function(data){
-//             let randIndex = Math.floor(Math.random()*data.length) 
-//             let que = "q"+(randIndex)
-//             let b = data[randIndex][que];
-//             console.log(que+" "+randIndex);
-//             console.log(b);
-            
-//             // flag = true;
-//             //        while(flag)
-//             //        {
-//             //            if(b["type"]==="js" && !localStorage.hasOwnProperty("q"+randIndex))
-//             //            {
-//             //             flag = false;
-//             //            }
-//             //            else{
-//             //                randIndex = Math.floor(Math.random()*data.length);
-//             //                b =  data["q"+randIndex];
-//             //            }
-//             //        }
-//         }
-//     })
-// }
-
-
-// function getJSONHtml(json,ar){
-//         //   localStorage.setItem(random.b,"yes");
-//         console.log(json)
-        
-      
-      
-        
-//         //    localStorage.setItem(0,JSON.stringify(c));
-//         //    localStorage.setItem("q"+randIndex,"yes");
-//         //    count++;
-//     }
 
 let randomPicker=(json,ar)=>{
     for(let i = 0;i < 10;i++){
