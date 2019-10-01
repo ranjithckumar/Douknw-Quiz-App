@@ -1,7 +1,7 @@
 
   #time{
       float:inline-end;
-      margin:0 0 0 75em;
+      margin:0 0 0 69em;
       font-weight: bold;
   }
   #section-number{
@@ -11,8 +11,12 @@
       
   }
   #submitButton,#sectionButton{
-      background-color: #00E676;
+      width:6em;
+      height: 2em;
+      margin:15px 0 0 0;
+      background-color:mediumspringgreen;
   }
+  
   #num{
       margin-top: 1em;
   } 
@@ -22,53 +26,58 @@
   }
   
   #img-backward{
-     
-      /* border-radius:50%; */
-      /* border-color: darkgray; */
+ 
       margin:0 0 0 1.5em;
       cursor: pointer;
   }
   #img-forward{
-        /* width: 10em; */
-        /* transform: rotate(180deg); */
-        /* height: 5em; */
-        /* border-radius:50%; */
-        /* border-color:black; */
+       
         margin:0 0 0 1em;
         cursor: pointer;
   }
+  #sectionButton{
+    margin:0 0 0 75em;
+}   
   #question{
       flex-flow: row;
       
   }
- 
+  #opt1,#opt2,#opt3,#opt4{
+      margin:0 0 0 15px;
+  }
   #option1{
       width: 18em;
       height: 3.5em;
       align-content: center;
       border:2px solid slategray;
-      border-radius: 10px;
+      border-radius: 25px;
       background-color:white;
-      margin: 60px 0 0 0;
+      margin: 40px 0 0 0;
   }
   #option2,#option3,#option4{
     width: 18em;
     height: 3.5em;
     align-content: center;
     border:2px solid  slategray;
-    border-radius: 10px;
+    border-radius: 25px;
     background-color:white;
-    margin-top: 40px;
+    margin: 30px 0 0  0;
 
 }
 @media only screen and (max-width: 1200px){
     #time{
         float:inline-end;
-        margin-left:75em;
+        margin-left:65em;
     }
     #section-number{
         float: inline-start;
         
+    }
+    /* #submitButton{
+        margin:0 0 0 60em;
+    } */
+    #sectionButton{
+        margin:0 0 0 59em;
     }
 }
 @media only screen and (max-width: 1125px) and (min-width:961px) {
@@ -80,6 +89,7 @@
         float: inline-start;
         
     }
+   
 }
 @media only screen and (max-width: 960px){
     #time{
@@ -90,8 +100,11 @@
         float: inline-start;
         
     }
+    #sectionButton{
+        margin:0 0 0 47.5em;
+    }
 }
-@media only screen and (max-width: 960px)and (min-width:780px) {
+@media only screen and (max-width: 960px)and (min-width:730px) {
     #time{
         float:inline-end;
         margin-left:40em;
@@ -99,6 +112,9 @@
     #section-number{
         float: inline-start;
         
+    }
+    #sectionButton{
+        margin:0 0 0 37em;
     }
 }
 @media  screen and (max-width: 793px) and (min-width:620px){
@@ -110,8 +126,9 @@
         float: inline-start;
         
     }
+    
 }
-@media  screen and (max-width: 633px) and (min-width:460px){
+@media  screen and (max-width: 633px) and (min-width:560px){
     #time{
         float:inline-end;
         margin-left:20em;
@@ -120,18 +137,37 @@
         float: inline-start;
         
     }
+    #sectionButton{
+        margin:0 0 0 27em;
+    }
 }
 @media  screen and (max-width: 473px) and (min-width:350px){
     #time{
         float:inline-end;
-        margin-left:15em;
+        margin-left:10em;
     }
     #section-number{
         float: inline-start;
         
     }
+    #sectionButton{
+        margin:0 0 0 18em;
+    }
+}
 }
 @media  screen and (max-width: 394px) and (min-width:240px){
+    #time{
+        float:inline-end;
+        margin-left:3em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+   
+   
+}
+@media  screen and (max-width: 360px) and (min-width:240px){
     #time{
         float:inline-end;
         margin-left:6em;
@@ -140,14 +176,17 @@
         float: inline-start;
         
     }
-}
-@media  screen and (max-width: 360px) and (min-width:240px){
-    #time{
-        float:inline-end;
-        margin-left:4em;
+    #img-backward{
+ 
+        margin:0 0 0 1em;
+        cursor: pointer;
     }
-    #section-number{
-        float: inline-start;
-        
+    #img-forward{
+         
+          margin:0 0 0 0em;
+          cursor: pointer;
+    }
+    #sectionButton{
+        margin:0 0 0 4em;
     }
 }
