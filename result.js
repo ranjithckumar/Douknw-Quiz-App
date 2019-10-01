@@ -7,78 +7,57 @@ $(document).ready(function(){
         url:'http://localhost:9000/',
         type: 'GET',
         success:function(data){
-            calculator(data);
+           htmlScore =  calculator(data,"html");
+           console.log(htmlScore);
+           cssScore = calculator(data,"css");
+           console.log(cssScore);
+           jsScore = calculator(data,'js');
+           console.log(jsScore);
+           score = htmlScore+cssScore+jsScore;
+           $("#marks").text(score);
+           $("#htmlScoreCard").text(htmlScore);
+           $("#cssScoreCard").text(cssScore);
+           $("#jsScoreCard").text(jsScore);
         }
     })
  
   });
 //   key = Object.keys(json[0])[1];
-let calculator = (json) => {
-  let  htmlAnswers = JSON.parse(localStorage.getItem("htmlAnswers"));
-  let htmlKeys = [];
-  let htmlMatches;
-htmlAnswers.forEach((htm)=>{
-   htmlKeys.push(htm.key);
+let calculator = (json,type) => {
+  let  answers = JSON.parse(localStorage.getItem(type+"Answers"));
+  let keys = [];
+  let matches;
+if(answers !== null)
+{
+    answers = answers.filter(obj=>
+        obj !== null);
+answers.forEach((ans)=>{
+   keys.push(ans.key);
 })
 
-let htmlquestions = json.filter(data=>{
-    return  data[Object.keys(data)[1]]["type"] === 'html';
+let questions = json.filter(data=>{
+    return  data[Object.keys(data)[1]]["type"] === type;
 } )
-htmlMatches = htmlquestions.filter(hk=>{
+matches = questions.filter(hk=>{
 //    console.log(Object.keys(htmlquestions[0][1]));
-if(htmlKeys.includes(Object.keys(hk)[1]))
+if(keys.includes(Object.keys(hk)[1]))
 return  hk;
 }).map(hk=>{return  {key:Object.keys(hk)[1],
      answer:hk[Object.keys(hk)[1]]['answer']}})
-console.log(htmlAnswers)
-console.log(htmlMatches);
-htmlScore = 0;
-htmlAnswers.forEach(hA=>
+console.log(answers)
+console.log(matches);
+var score = 0;
+answers.forEach(hA=>
     {
         console.log(hA.key);
-        htmlMatches.filter(hM=>hA.key === hM.key)
+       matcher =  matches.filter(hM=>hA.key === hM.key)
+       if(hA.answer === matcher[0].answer)
+       score += 1;
     })
+    return score;
+    //     $("#htmlScoreCard").text(htmlScore);
+    // console.log(htmlScore);
+}
+return 0;
 }
 
-
-
-
-
-// $("document").ready(function(){
-
-//     for(let i = 1;i<=10;i++){
-//         let o = JSON.parse(localStorage.getItem(i));
-//         let ans = localStorage.getItem("a"+i);
-        
-//        if(ans != null && o["answer"]===ans)
-//        {
-//           score++;
-//           htmlScore++;
-//        }
-//     }
-//     for(let i = 11;i<=20;i++){
-//         let o = JSON.parse(localStorage.getItem(i));
-//         let ans = localStorage.getItem("a"+i);
-       
-//        if(ans != null && o["answer"]===ans)
-//        {
-//           score++;
-//           cssScore++;
-//        }
-//     }
-//     for(let i = 21;i<=30;i++){
-//         let o = JSON.parse(localStorage.getItem(i));
-//         let ans = localStorage.getItem("a"+i);
-       
-//        if(ans != null && o["answer"]===ans)
-//        {
-//           score++;
-//           jsScore++;
-//        }
-//     }
-//     $("#marks").text(score);
-//     $("#htmlScoreCard").text(htmlScore);
-//     $("#cssScoreCard").text(cssScore);
-//     $("#jsScoreCard").text(jsScore);
-//     localStorage.clear();
-// })
