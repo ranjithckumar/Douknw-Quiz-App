@@ -7,26 +7,27 @@ $(document).ready(function(){
         url:'http://localhost:9000/',
         type: 'GET',
         success:function(data){
+           //Filtering of question from a pool of multiple type questions
             let count1 = -1;
             let htmlQuestions = data.filter(dt=>{count1++
                 return dt["q"+count1]["type"] === 'html';
              })
-             randomPicker(htmlQuestions,htmlAr);
+             randomPicker(htmlQuestions,htmlAr);//Filtered question of particular type and a empty array for that type is passed as parameter
              count1 = -1;
              let cssQuestions = data.filter(dt=>{count1++
                 return dt["q"+count1]["type"] === 'css';
              })
-             randomPicker(cssQuestions,cssAr);
+             randomPicker(cssQuestions,cssAr);//Filtered question of particular type and a empty array for that type is passed as parameter
             count1 = -1;
              let jsQuestions = data.filter(dt=>{count1++
                 return dt["q"+count1]["type"] === 'js';
              })
-             randomPicker(jsQuestions,jsAr);
+             randomPicker(jsQuestions,jsAr);//Filtered question of particular type and a empty array for that type is passed as parameter
         }
     })
  
   });
-
+//If the localstorage has the particular item then opacity of that section is reduced to indicate it is not clickable.
 if(localStorage.getItem("htm")==="yes")
     $("#htm").css("opacity",0.5);
  
@@ -36,6 +37,7 @@ if(localStorage.getItem("htm")==="yes")
  if(localStorage.getItem("js")==="yes")
     $("#jst").css("opacity",0.5);
 
+    //Only if the particular section is being clicked for first time then user gets navigated to that page
     $("#htm").click(()=>{
       if(!localStorage.hasOwnProperty("htm"))
       {
@@ -65,7 +67,7 @@ if(localStorage.getItem("htm")==="yes")
   })
 
 
-
+//This function generate ten random question from a pool of  multiple questions which are all of same type.
 let randomPicker=(json,ar)=>{
     for(let i = 0;i < 10;i++){
     let randIndex = Math.floor(Math.random()*json.length)
