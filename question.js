@@ -71,9 +71,7 @@ $("#img-backward").click(()=>{
         $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');
         action('sub');
        if(selectedOptions[questionNumber-1]!=undefined)
-        $("#option"+selectedOptions[questionNumber-1]).css('background-color','#78909C') ;
-      
-       
+        $("#option"+selectedOptions[questionNumber-1]).css('background-color','#78909C') ; 
     }
 })
 let key;
