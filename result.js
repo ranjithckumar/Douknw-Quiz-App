@@ -62,3 +62,6 @@ answers.forEach(hA=>
 return 0;
 }
 
+window.onbeforeunload = ()=> {
+    localStorage.clear();
+}
