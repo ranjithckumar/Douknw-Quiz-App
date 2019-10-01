@@ -14,7 +14,7 @@ body{
     font-size: 5vw;
     height: 20vh;
 }
-
+/* 
 @media only screen and (max-width: 768px){
     #listContainer
     { 
@@ -28,7 +28,7 @@ body{
     { 
         display: inline;
     }
-}
+} */
 
 
 #javaScript{
@@ -57,15 +57,15 @@ body{
    background-color: #ffffff;
    margin-left: 3%;
 }
-
+/* 
 #takeTest{
     color: #BDBDBD;  
     font-size: 2vw;
     margin-left: 5%;
-    }
+    } */
     
     #programTitle{
-     /* text-align: center; */
+     text-align: center;
      margin-left: 5%;
      font-size: 3vw;
      margin-top: 3%;
@@ -115,8 +115,9 @@ body{
     }
     #button{
         background-color: #00E676;
-        margin-left: 37%;
-        margin-top: 5%;
+        /* margin-left: 37%;
+        margin-top: 5%; */
+        margin: 2em 2em 2em 2em;
         /* height: 7vh; */
         width: 10rem;
         height: 5vh;
@@ -126,29 +127,141 @@ body{
         border-radius: 5%;
     }
 }
-
-@media only screen and (max-width: 768px){
+@media screen and (min-width: 200px) and (max-width:359px){
     #javaScript,#python,#java{
-        height: 20vh;
-        width: 20rem;
+        height: 8em;
+        width: 10rem;
         background-color: #ffffff;
+        margin:2em 0 1em 2em;
        
     }
-
+    #programTitle{
+        font-size:2vh;
+    }
     #button{
         background-color: #00E676;
-        margin-left: 30%;
+        margin-left: 37%;
         margin-top: 5%;
         /* height: 7vh; */
-        width: 8rem;
+        width: 5rem;
+        height: 6vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 0%;
+    }
+}
+@media screen and (min-width: 360px) and (max-width:499px){
+    #javaScript,#python,#java{
+        height: 10em;
+        width: 12rem;
+        background-color: #ffffff;
+        margin:2em 0 1em 6em;
+       
+    }
+    #programTitle{
+        font-size:3vh;
+    }
+    #button{
+        background-color: #00E676;
+        margin-left: 37%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 5rem;
+        height: 6vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 0%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width:600px){
+    #javaScript,#python,#java{
+        height: 10em;
+        width: 14rem;
+        background-color: #ffffff;
+        margin:2em 0 1em 10em;
+       
+    }
+    #button{
+        background-color: #00E676;
+        margin-left: 37%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 5rem;
+        height: 6vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 0%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width:768px){
+    #javaScript,#python,#java{
+        height: 10em;
+        width: 18rem;
+        background-color: #ffffff;
+        margin:2em 0 1em 10em;
+       
+    }
+    #button{
+        background-color: #00E676;
+        margin-left: 37%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 6rem;
+        height: 8vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 0%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width:900px){
+    #javaScript,#python,#java{
+        height: 10em;
+        width: 20rem;
+        background-color: #ffffff;
+        margin:2em 0 1em 15em;
+       
+    }
+    #button{
+        background-color: #00E676;
+        margin-left: 37%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 6rem;
+        height: 6vh;
+        font-size: 1.5vw;
+        color: #ffffff;
+        border-color: #00E676;
+        border-radius: 0%;
+    }
+}
+@media screen and (min-width: 901px) and (max-width:1023px){
+    #javaScript,#python,#java{
+        height: 10em;
+        width: 20rem;
+        background-color: #ffffff;
+        margin:2em 0 1em 20em;
+       
+    }
+    #button{
+        background-color: #00E676;
+        margin-left: 37%;
+        margin-top: 5%;
+        /* height: 7vh; */
+        width: 6rem;
         height: 5vh;
         font-size: 1.5vw;
         color: #ffffff;
         border-color: #00E676;
-        border-radius: 5%;
+        border-radius: 0%;
     }
 }
 
+
+/* 
 @media only screen and (max-width: 768px) and (orientation:landscape) {
     #javaScript,#python,#java{
         height: 40vh;
@@ -161,7 +274,7 @@ body{
         background-color: #00E676;
         margin-left: 30%;
         margin-top: 5%;
-        /* height: 7vh; */
+    
         width: 8rem;
         height: 8vh;
         font-size: 1.5vw;
@@ -169,4 +282,4 @@ body{
         border-color: #00E676;
         border-radius: 5%;
     }
-}
+} */
