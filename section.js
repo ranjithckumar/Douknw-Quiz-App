@@ -1,7 +1,7 @@
 let htmlAr = [];
 let cssAr = [];
 let jsAr = [];
-
+//Ajax request is made to receive all the questions from mongodb database using node api.
 $(document).ready(function(){
     $.ajax({
         url:'http://localhost:9000/',
@@ -72,6 +72,4 @@ let randomPicker=(json,ar)=>{
     ar.push(json[randIndex])
     json.splice(randIndex,1);
     }
-    console.log(ar);
-    return ar;
 }

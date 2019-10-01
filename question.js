@@ -23,7 +23,10 @@ let timer = ()=>{
 let answerArray = [];
 let selectedOptions = [];
 let questions;
-let query = window.location.search.substring(1,);
+
+//query return html or css or js from url 
+//Eg : douknw.com/questions?html
+let query = window.location.search.substring(1,); // ==> html
 
 if(query === 'html')
 {
@@ -40,7 +43,7 @@ else
    questions = JSON.parse(localStorage.getItem("jsArray"));
    localStorage.removeItem('jsArray');
  }
-console.log(questions);
+
 
 $(document).ready(()=>{
 
