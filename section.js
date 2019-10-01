@@ -37,22 +37,31 @@ if(localStorage.getItem("htm")==="yes")
     $("#jst").css("opacity",0.5);
 
     $("#htm").click(()=>{
+      if(!localStorage.hasOwnProperty("htm"))
+      {
       localStorage.setItem("htm","yes");
       localStorage.setItem("htmlArray",JSON.stringify(htmlAr));
      location.href='questions.html?html';
+      }
    })
   
   $("#cs").click(()=>{
+   if(!localStorage.hasOwnProperty("cs"))
+   {
      localStorage.setItem("cs","yes");
      localStorage.setItem("cssArray",JSON.stringify(cssAr));
      location.href='questions.html?css';
+   }
   })
   
   
   $("#jst").click(function(){
+   if(!localStorage.hasOwnProperty("js"))
+   {
      localStorage.setItem("js","yes");
      localStorage.setItem("jsArray",JSON.stringify(jsAr));
      location.href='questions.html?js';
+   }
   })
 
 
