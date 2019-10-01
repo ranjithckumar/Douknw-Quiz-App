@@ -32,7 +32,7 @@ $("#opt3").text(firstQuestion["options"][2]);
 $("#opt4").text(firstQuestion["options"][3]);
 
 
-$("#img-backward").click(function(){
+$("#img-forward").click(function(){
     if(question>1)
     {
         question--;
@@ -50,7 +50,7 @@ $("#img-backward").click(function(){
     }
 })
 
-$("#img-forward").click(function(){
+$("#img-backward").click(function(){
     if(question != 10)
     {
         $("#option1, #option2, #option3, #option4").css('background-color','#CFD8DC');

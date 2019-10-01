@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      <link rel="stylesheet" href="questions.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <title>Quiz Application</title>
@@ -18,22 +19,20 @@
           <!-- section and timings -->
         <div class="section" id="section1">
            <!-- <h4 id="section-number">Section1</h4><h4 id="time">00:00:00</h4> -->
-           <span id="section-number">Section1</span>
-           <span id="time" >5:00</span>
+           <span id="section-number">Section1</span> &nbsp;<button type="button" class="Button" id="sectionButton">Section</button>
+           <span id="time" >5:00</span>  &nbsp;<button type="button" class="Button" id="submitButton">Finish</button>
         </div> 
         <!-- question number and buttons for forward , backward. -->
         <div class="question-number" id="number">
-            <!-- <h4 id="num">1</h4><h4>of 10</h4> -->
+ 
             <span id="num">1</span>
             <span id="end-num">of 10</span>
-            <!-- <button class="back-button" id="back" onclick="back()"><span id="b">&#8249;</span> </button>   
-            <button class="forward-button" id="forward" onclick="back()"><span id="f">&#8250;</span></button> -->
-            <img id="img-backward" src="images/less.png" alt="backward">
-            <img id="img-forward" src="images/less.png"alt="forward">
+            
+           
         </div> 
           <!--question-->
           <div id="question">
-             Inside which HTML element do we put the JavaScript?
+             <b>Inside which HTML element do we put the JavaScript?</b>
           </div>
           <!-- option part -->
           <div class="options">
@@ -41,15 +40,17 @@
               <div id="option2"><span id="opt2"></span></div>
               <div id="option3"><span id="opt3"></span></div>
               <div id="option4"><span id="opt4"></span></div>
-          </div>
-          <button type="button" class="Button" id="sectionButton">Section</button>
-          <button type="button" class="Button" id="submitButton">Finish</button>
+          </div></br>
+          <!-- <img id="img-backward" src="images/less.png" alt="backward"> -->
+          <i class="fa fa-caret-square-o-left fa-3x" aria-hidden="true"id="img-forward"></i>
+          <i class="fa fa-caret-square-o-right fa-3x" aria-hidden="true"id="img-backward"></i>
+          <!-- <img id="img-forward" src="images/less.png"alt="forward"> -->
       </div>
-      <!-- Optional JavaScript -->
+     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/JavaScript" src="question.js"></script>
   </body>
 </html>

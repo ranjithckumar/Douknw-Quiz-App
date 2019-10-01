@@ -1,13 +1,17 @@
 
   #time{
       float:inline-end;
-      margin-left:75em;
+      margin:0 0 0 75em;
       font-weight: bold;
   }
   #section-number{
+      margin: 1em 0 0 0;
       float: inline-start;
       font-weight: bold;
       
+  }
+  #submitButton,#sectionButton{
+      background-color: #00E676;
   }
   #num{
       margin-top: 1em;
@@ -16,19 +20,22 @@
       margin-top: 10px;
 
   }
+  
   #img-backward{
-      width: 40px;
-      height: 30px;
-      border-radius:50%;
-      border-color: darkgray;
-      margin-left:10px;
+     
+      /* border-radius:50%; */
+      /* border-color: darkgray; */
+      margin:0 0 0 1.5em;
+      cursor: pointer;
   }
   #img-forward{
-        width: 40px;
-        transform: rotate(180deg);
-        height: 30px;
-        border-radius:50%;
-        border-color:black;
+        /* width: 10em; */
+        /* transform: rotate(180deg); */
+        /* height: 5em; */
+        /* border-radius:50%; */
+        /* border-color:black; */
+        margin:0 0 0 1em;
+        cursor: pointer;
   }
   #question{
       flex-flow: row;
@@ -36,19 +43,21 @@
   }
  
   #option1{
-      width: 13em;
-      height: 2.5em;
-      border:2px solid #00E676;
-      border-radius: 15px;
-      background-color:#CFD8DC;
-      margin-top: 80px;
+      width: 18em;
+      height: 3.5em;
+      align-content: center;
+      border:2px solid slategray;
+      border-radius: 10px;
+      background-color:white;
+      margin: 60px 0 0 0;
   }
   #option2,#option3,#option4{
-    width: 13em;
-    height: 2.5em;
-    border:2px solid #00E676;
-    border-radius: 15px;
-    background-color:#CFD8DC;
+    width: 18em;
+    height: 3.5em;
+    align-content: center;
+    border:2px solid  slategray;
+    border-radius: 10px;
+    background-color:white;
     margin-top: 40px;
 
 }
@@ -126,6 +135,16 @@
     #time{
         float:inline-end;
         margin-left:6em;
+    }
+    #section-number{
+        float: inline-start;
+        
+    }
+}
+@media  screen and (max-width: 360px) and (min-width:240px){
+    #time{
+        float:inline-end;
+        margin-left:4em;
     }
     #section-number{
         float: inline-start;
