@@ -28,14 +28,17 @@ let query = window.location.search.substring(1,);
 if(query === 'html')
 {
 questions = JSON.parse( localStorage.getItem("htmlArray"));
+localStorage.removeItem('htmlArray');
 }
 else if(query === 'css')
 {
     questions = JSON.parse(localStorage.getItem("cssArray"));
+    localStorage.removeItem('cssArray');
 }
 else
  {
    questions = JSON.parse(localStorage.getItem("jsArray"));
+   localStorage.removeItem('jsArray');
  }
 console.log(questions);
 
@@ -73,7 +76,7 @@ $("#img-backward").click(()=>{
        
     }
 })
-
+let key;
 let action =((option)=>{
  option==='add'?questionNumber++:questionNumber--;
 if(questionNumber>=1 && questionNumber <= 10)
@@ -88,38 +91,40 @@ if(questionNumber>=1 && questionNumber <= 10)
 }
 })
 
- $("#option1").click(function(){
+ $("#option1").click(()=>{
   selector(1);
   $("#option2, #option3, #option4").css('background-color','#CFD8DC');
  })
 
- $("#option2").click(function(){
+ $("#option2").click(()=>{
     selector(2);
     $("#option1, #option3, #option4").css('background-color','#CFD8DC');
    })
 
-   $("#option3").click(function(){
+   $("#option3").click(()=>{
     selector(3);
     $("#option1, #option2, #option4").css('background-color','#CFD8DC');
    })
 
-   $("#option4").click(function(){
+   $("#option4").click(()=>{
     selector(4);
     $("#option1, #option2, #option3").css('background-color','#CFD8DC');
    })
 
 let selector = ((option)=>{
-    answerArray[questionNumber-1] = $("#opt"+option).text();
+    answerArray[questionNumber-1] ={key:key,answer : $("#opt"+option).text()};
     selectedOptions[questionNumber-1]=option;
     $("#option"+option).css('background-color','#78909C');
 })
 
 
-   $("#submitButton").click(function(){
+   $("#submitButton").click(()=>{
+       localStorage.setItem(query+"Answers",JSON.stringify(answerArray));
        location.href = 'result.html'
    })
 
-   $("#sectionButton").click(function(){
+   $("#sectionButton").click(()=>{
+       localStorage.setItem(query+"Answers",JSON.stringify(answerArray));
        location.href = 'section.html'
    })
  
