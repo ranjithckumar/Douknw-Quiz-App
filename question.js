@@ -209,7 +209,7 @@ if(localStorage.getItem("sec") == 2){
    })
 
    $("#submitButton").click(function(){
-       location.href = 'result.html'
+       location.href = 'progress.html'
    })
 
    $("#sectionButton").click(function(){

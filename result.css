@@ -1,40 +1,73 @@
 body{
-    background-color:#ffffff;
-    margin:0;
+    background-color: slateblue;
 }
-
-#testTitle{
-    font-size: 4vw;
-    text-align: center;
+.container{
+    display: flex;
+  align-items: center;
+  flex-direction: row;
 }
-
-#score{
-    text-align: center;
-    margin-top: 3%;
+#score,#htmlScore,#cssScore,#jsScore{
+     
+    margin: 10% 5% 0 2%;
+    border-radius: 50%;
+   background-color:ghostwhite; 
+   width:30em;
+    height: 18em;
 }
-
-#analyse{
-    text-align: center;
-    font-size: 3vw;
-    margin-top: 5%;
+#htmlScore,#cssScore,#jsScore{
+    width:20em;
+    height:16em;
 }
-
-#analyseContainer{
-    margin-top: 8%;
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+  }
+  h2{ 
+    color:rebeccapurple;
+    
+  }
+h3{
+    color:rebeccapurple;
+    margin: 2em 0 0 3em;
 }
-
-#html{
-    text-align: center;
+#marks{
+    margin: 0 0 0 9em;
 }
-
-#css{
-    margin-left: 20%;
+h5{
+    color:rebeccapurple;
+    margin: 2em 0 0 4.3em;
 }
-
-#cssScoreCard{
-    margin-left: 5%;
+h4{
+    
+    margin: 1em 0 0 4.2em;
 }
+@media only screen and(max-width:1000px){
+    #score,#htmlScore,#cssScore,#jsScore{
+        margin: 10% 3% 0 1px;
+        border-radius: 30%;
+       background-color:ghostwhite; 
+       width:27em;
+        height: 18em;  
+    }
+    #htmlScore,#cssScore,#jsScore{
+        width:40em;
+        height: 14em;
+    }
+    h3{
+        color:rebeccapurple;
+        margin: 2em 0 0 1em;
+    }
+    #marks{
+        margin: 0 0 0 6em;
+    }
+    h5{
+        color:rebeccapurple;
+        margin: 2em 0 0 1em;
+    }
+    h4{
+        
+        margin: 1em 0 0 2em;
+    }
 
-#jsScoreCard{
-    margin-left: 15%;
 }
