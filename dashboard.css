@@ -1,172 +1,142 @@
-body{
-    background-color: #EEEEEE;
-    margin:0;
+*{
+    margin : 0;
+    padding: 0;
 }
-
+body
+{
+    background-color: #EEEEEE;
+}
 #container{
     background-color: #ffffff;
-    height: 18vh;
+    height: 20%;
     align-items: center;
     text-align: center;
 }
 
-#dashboard{
-    font-size: 5vw;
-    height: 20vh;
+#dashBoardTitle{
+    font-size: 4em;
 }
 
-@media only screen and (max-width: 768px){
-    #listContainer
-    { 
-        display: inline;
-    }
+#listContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:2rem;
+    height: 80%;
+    align-items: center;
+    margin : 0% 5% 0% 5%;
+}
+
+.item{
+   text-align: center;
+   background-color: #ffffff;
+   border-radius: 15px;
+   padding:10% 0% 10% 0%;
+}
+
+.button{
+    margin:5% 0% 0% 0%;
+    padding: 2% 10% 2% 10%;
 }
 
 
+/*ipad*/
 @media only screen and (max-width: 1024px){
     #listContainer
     { 
         display: inline;
     }
-}
-
-
-#javaScript{
-    height: 35vh;
-    width: 30%;
-    margin-top: 10%;
-    border-radius: 5%;
-   background-color: #ffffff;
-   margin-left: 2%;
-}
-
-#python{
-    height: 35vh;
-    width: 30%;
-    margin-top: 10%;
-    border-radius: 5%;
-   background-color: #ffffff;
-   margin-left: 3%;
-}
-
-#java{
-    height: 35vh;
-    width: 30%;
-    margin-top: 10%;
-    border-radius: 5%;
-   background-color: #ffffff;
-   margin-left: 3%;
-}
-
-#takeTest{
-    color: #BDBDBD;  
-    font-size: 2vw;
-    margin-left: 5%;
+    .item{
+        justify-content: center;
+        margin: 10% 0%  0% 25%;
+        height: 20%;
+        width: 50%;
+        padding: 8% 0% 5% 0%;
     }
-    
-    #programTitle{
-     /* text-align: center; */
-     margin-left: 5%;
-     font-size: 3vw;
-     margin-top: 3%;
-    }
-    
-    #button{
-        background-color: #00E676;
-        margin-left: 30%;
-        margin-top: 5%;
-        /* height: 7vh; */
-        width: 10rem;
-        height: 8vh;
-        font-size: 1.5vw;
-        color: #ffffff;
-        border-color: #00E676;
-        border-radius: 5%;
-    }
-/*ipad*/
-@media screen and (max-width: 1024px){
-    #javaScript,#python,#java{
-        height: 20vh;
-        width: 40rem;
-        background-color: #ffffff;
-       
-    }
-    #button{
-        background-color: #00E676;
-        margin-left: 37%;
-        margin-top: 5%;
-        /* height: 7vh; */
-        width: 10rem;
-        height: 5vh;
-        font-size: 1.5vw;
-        color: #ffffff;
-        border-color: #00E676;
-        border-radius: 5%;
+    #java{
+        margin-bottom: 5%;
     }
 }
 
-/*ipad*/
-@media screen and (max-width: 1024px) and (orientation:landscape){
-    #javaScript,#python,#java{
-        height: 25vh;
-        width: 40rem;
-        background-color: #ffffff;
-       
+@media only screen and (max-width: 1024px) and (orientation : landscape){
+    .item{
+      padding: 5% 0% 5% 0%;
+      height: 30%;
+  }
+  }
+
+@media only screen and (max-width: 823px){
+    #dashBoardTitle{
+        font-size: 2em;
     }
-    #button{
-        background-color: #00E676;
-        margin-left: 37%;
-        margin-top: 5%;
-        /* height: 7vh; */
-        width: 10rem;
-        height: 5vh;
-        font-size: 1.5vw;
-        color: #ffffff;
-        border-color: #00E676;
-        border-radius: 5%;
+    .item{
+        padding: 5% 0% 5% 0%;
+        height: 50%;
     }
 }
+
+
+  
+/* @media only screen and (max-width: 768px){
+  .item{
+    margin: 10% 0%  0% 25%;
+    padding: 5% 0% 5% 0%;
+    height: 20%;
+}
+} */
 
 @media only screen and (max-width: 768px){
-    #javaScript,#python,#java{
-        height: 20vh;
-        width: 20rem;
-        background-color: #ffffff;
-       
+    .item{
+      margin: 10% 0%  0% 25%;
+      padding: 5% 0% 5% 0%;
+      height: 50%;
+      width: 60%;
+      /* font-size: .5em; */
+  }
+  }
+
+@media only screen and (max-width: 480px) {
+    #dashBoardTitle{
+        font-size: 2em;
+    }
+    
+    .item{
+        margin: 5% 0%  0% 4%;
+        height: 25%;
+        width: 80%;
     }
 
-    #button{
-        background-color: #00E676;
-        margin-left: 30%;
-        margin-top: 5%;
-        /* height: 7vh; */
-        width: 8rem;
-        height: 5vh;
-        font-size: 1.5vw;
-        color: #ffffff;
-        border-color: #00E676;
-        border-radius: 5%;
+  }
+
+
+
+  @media only screen and (max-width: 414px) {
+    #dashBoardTitle{
+        font-size: 2em;
     }
+    
+    .item{
+        margin: 10% 0%  0% 10%;
+        padding: 8% 0% 5% 0%;
+        height: 20%;
+        /* font-size: .5em; */
+    }
+  .programTitle{
+      font-size: 1.5em;
+  }
+  .button{
+    margin:5% 0% 0% 0%;
+    padding: 0% 8% 0% 8%;
 }
+  }
 
-@media only screen and (max-width: 768px) and (orientation:landscape) {
-    #javaScript,#python,#java{
-        height: 40vh;
-        width: 20rem;
-        background-color: #ffffff;
-       
+  @media only screen and (max-width: 320px) {
+    #dashBoardTitle{
+        font-size: 2em;
     }
-
-    #button{
-        background-color: #00E676;
-        margin-left: 30%;
-        margin-top: 5%;
-        /* height: 7vh; */
-        width: 8rem;
-        height: 8vh;
-        font-size: 1.5vw;
-        color: #ffffff;
-        border-color: #00E676;
-        border-radius: 5%;
+    .item{
+        margin: 10% 0%  0% 10%;
+        padding: 5% 0% 5% 0%;
+        height: 20%;
+        /* font-size: .5em; */
     }
 }

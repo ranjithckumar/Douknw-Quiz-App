@@ -67,7 +67,7 @@ if(localStorage.getItem("htm")==="yes")
   })
 
 
-//This function generate ten random question from a pool of  multiple questions which are all of same type.
+//This function generate ten random question from a pool of  multiple questions which are all of different type.
 let randomPicker=(json,ar)=>{
     for(let i = 0;i < 10;i++){
     let randIndex = Math.floor(Math.random()*json.length)

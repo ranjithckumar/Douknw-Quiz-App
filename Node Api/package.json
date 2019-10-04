@@ -1,5 +1,5 @@
 {
-  "name": "mern-proj",
+  "name": "quiz-app",
   "version": "1.0.0",
   "description": "Say nada",
   "main": "server.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
   },
-  "author": "",
+  "author": "Gokul R,Ranjith Kumar C",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.19.2"

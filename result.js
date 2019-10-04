@@ -64,7 +64,7 @@ answers.forEach(hA=>
 return 0; //Here 0 is returned if user hasn't attended the section.
 }
 
-//The below code clears the storage whenever user closes the tab or browser or when user redirects to another page.
+//The below code clears the local storage whenever user closes the tab or browser or when user redirects to another page.
 window.onbeforeunload = ()=> {
     localStorage.clear();
 } 

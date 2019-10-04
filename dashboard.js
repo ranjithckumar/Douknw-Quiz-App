@@ -1,3 +1,3 @@
-$(".jsButton").click(function(){
+$("#jsButton").click(function(){
    location.href='section.html';
 })
