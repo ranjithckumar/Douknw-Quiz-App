@@ -1,3 +1,39 @@
+.main{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 
   #time{
       float:inline-end;
@@ -73,9 +109,7 @@
         float: inline-start;
         
     }
-    /* #submitButton{
-        margin:0 0 0 60em;
-    } */
+   
     #sectionButton{
         margin:0 0 0 59em;
     }
@@ -189,4 +223,4 @@
     #sectionButton{
         margin:0 0 0 4em;
     }
-}
+} */

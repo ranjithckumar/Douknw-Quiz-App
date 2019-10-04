@@ -1,19 +1,7 @@
-
-//   let value=document.querySelectorAll('#round data-value');
-//    Array.from(value).forEach(function(values){
-//        console.log(values.value);
-//        console.log("haiii");
-//    })
-
 console.log("aaa");
 
 $("document").ready(function(){
-    let attr=$('#total').attr('data-value');
-    console.log(attr);
-    $("#total").attr('data-value',0.90);
-    $("#html").attr('data-value',.50);
-    $("#css").attr('data-value','cssScore');
-    $("#js").attr('data-value','jsScore');
+  
     // localStorage.clear();
     function Circlle(el){
         $(el).circleProgress({fill: {color: '#ff5c5c'}})
@@ -59,6 +47,7 @@ $("document").ready(function(){
           jsScore++;
        }
     }
+   demo();
     // $("#marks").text(score);
     // $("#htmlScoreCard").text(htmlScore);
     // $("#cssScoreCard").text(cssScore);
@@ -67,3 +56,11 @@ $("document").ready(function(){
 })
  
 
+function demo(){
+   let attr=$('#total').attr('data-value');
+    console.log('gfcgrjdjd');
+    $("#total").attr('data-value',0.90);
+    $("#html").attr('data-value',.50);
+    $("#css").attr('data-value',cssScore);
+    $("#js").attr('data-value',jsScore);
+}

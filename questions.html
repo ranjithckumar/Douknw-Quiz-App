@@ -14,40 +14,44 @@
     <title>Quiz Application</title>
   </head>
   <body>
-      <!-- container for section1 -->
-      <div class="container-fluid">
-          <!-- section and timings -->
+    
+     <div class="main">
+
+      <div class="left" style="background:white"></div>
+      <div class="center" style="background:white">
         <div class="section" id="section1">
-           <!-- <h4 id="section-number">Section1</h4><h4 id="time">00:00:00</h4> -->
-           <span id="section-number">Section1</span>
-           <span id="time" >5:00</span>  &nbsp;<button type="button" class="Button" id="submitButton">Finish</button>
-        </div> 
-        <!-- question number and buttons for forward , backward. -->
-        <div class="question-number" id="number">
- 
-            <span id="num">1</span>
-            <span id="end-num">of 10</span>
-            
+          <!-- <h4 id="section-number">Section1</h4><h4 id="time">00:00:00</h4> -->
+          <span id="section-number">Section1</span>
+          <span id="time" >5:00</span>  &nbsp;<button type="button" class="Button" id="submitButton">Finish</button>
+       </div> 
+       <!-- question number and buttons for forward , backward. -->
+       <div class="question-number" id="number">
+
+           <span id="num">1</span>
+           <span id="end-num">of 10</span>
            
-        </div> 
-          <!--question-->
-          <div id="question">
-             <b>Inside which HTML element do we put the JavaScript?</b>
-          </div>
-          <!-- option part -->
-          <div class="options">
-              <div id="option1"><span id="opt1"></span></div>
-              <div id="option2"><span id="opt2"></span></div>
-              <div id="option3"><span id="opt3"></span></div>
-              <div id="option4"><span id="opt4"></span></div>
-          </div></br>
-          <!-- <img id="img-backward" src="images/less.png" alt="backward"> -->
-          <i class="fa fa-caret-square-o-left fa-3x" aria-hidden="true" style="color: mediumspringgreen"id="img-forward"></i>
-          <i class="fa fa-caret-square-o-right fa-3x" aria-hidden="true"style="color: mediumspringgreen"id="img-backward"></i>
-          <button type="button" class="Button" id="sectionButton">Section</button>
-          <!-- <img id="img-forward" src="images/less.png"alt="forward"> -->
+          
+       </div> 
+         <!--question-->
+         <div id="question">
+            <b>Inside which HTML element do we put the JavaScript?</b>
+         </div>
+         <!-- option part -->
+         <div class="options">
+             <div id="option1"><span id="opt1"></span></div>
+             <div id="option2"><span id="opt2"></span></div>
+             <div id="option3"><span id="opt3"></span></div>
+             <div id="option4"><span id="opt4"></span></div>
+         </div></br>
+         <!-- <img id="img-backward" src="images/less.png" alt="backward"> -->
+         <i class="fa fa-caret-square-o-left fa-3x" aria-hidden="true" style="color: mediumspringgreen"id="img-forward"></i>
+         <i class="fa fa-caret-square-o-right fa-3x" aria-hidden="true"style="color: mediumspringgreen"id="img-backward"></i>
+         <button type="button" class="Button" id="sectionButton">Section</button>
+         <!-- <img id="img-forward" src="images/less.png"alt="forward"> -->
+     </div>
+     <div class="right" style="background:white"></div>
       </div>
-     
+      
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
