@@ -70,7 +70,7 @@ body
     }
     .item{
         padding: 5% 0% 5% 0%;
-        height: 50%;
+        height: 30%;
     }
 }
 
@@ -88,8 +88,8 @@ body
     .item{
       margin: 10% 0%  0% 25%;
       padding: 5% 0% 5% 0%;
-      height: 50%;
-      width: 60%;
+      height: 30%;
+      width: 50%;
       /* font-size: .5em; */
   }
   }

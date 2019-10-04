@@ -32,16 +32,19 @@ if(query === 'html')
 {
 questions = JSON.parse( localStorage.getItem("htmlArray")); //Getting an array from local storage which is populated with 10 html questions
 localStorage.removeItem('htmlArray');//Removing it from local storage
+$('#sec').text(1);
 }
 else if(query === 'css')
 {
     questions = JSON.parse(localStorage.getItem("cssArray"));//Getting an array from local storage which is populated with 10 html questions
     localStorage.removeItem('cssArray');//Removing it from local storage
+    $('#sec').text(2);
 }
 else
  {
    questions = JSON.parse(localStorage.getItem("jsArray"));   //Getting an array from local storage which is populated with 10 html questions
    localStorage.removeItem('jsArray');   //Removing it from local storage
+   $('#sec').text(3);
  }
 
 
@@ -131,6 +134,9 @@ let selector = ((option)=>{
 
    $("#sectionButton").click(()=>{
        localStorage.setItem(query+"Answers",JSON.stringify(answerArray));
-       location.href = 'section.html'
+       if(localStorage.hasOwnProperty('htm') && localStorage.hasOwnProperty('cs')&&localStorage.hasOwnProperty('js'))
+       location.href = 'result.html';
+       else
+       location.href = 'section.html';
    })
  
