@@ -1,40 +1,56 @@
-body{
-    background-color:#ffffff;
-    margin:0;
+*{
+    padding: 0;
+    margin: 0;
 }
 
-#testTitle{
-    font-size: 4vw;
+button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#circleBar {
+    /* margin-top: 200px; */
     text-align: center;
-}
+    font-family: 'Staatliches', cursive;
+   
+  }
+  #circleBar .round {
+    min-height: 255px;
+    margin: 20px 0 0 0;
+    position: relative;
+    /* margin-bottom: 20px; */
+  }
+  #circleBar .round strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: #212121;
+    font-weight: 100;
+  }
+  #circleBar span {
+    display: block;
+    color: #999;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  #circleBar span i {
+    color: #2294F3;
+    font-size: 22px;
+    margin-right: 6px;
+  }
+  section button:hover {
+    background-color: #2294F3;
+  }
 
-#score{
-    text-align: center;
-    margin-top: 3%;
-}
 
-#analyse{
-    text-align: center;
-    font-size: 3vw;
-    margin-top: 5%;
-}
 
-#analyseContainer{
-    margin-top: 8%;
-}
+/* 
+  @media screen and ( width: 400px ) {
 
-#html{
-    text-align: center;
-}
-
-#css{
-    margin-left: 20%;
-}
-
-#cssScoreCard{
-    margin-left: 5%;
-}
-
-#jsScoreCard{
-    margin-left: 15%;
-}
+  } */
