@@ -1,36 +1,70 @@
-<html>
-    <head>
-        <title>Result</title>
-        <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-        crossorigin="anonymous">
-        <link rel="stylesheet" href="result.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <h2 class="header">Mock Test Result</h2>
-      <div class="container">
-          
-        <div id="score"> <h3 id="testScore">Total Score is</h3>
-          <br><b id="marks">0</b>/<b>30</b>
+<!DOCTYPE html>
+<html lang="en" >
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>Results</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+ 
+      <link rel="stylesheet" href="result.css">
+ 
+</head>
+ 
+<body>
+ 
+  <section id="circleBar">
+ 
+ 
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-3">		 -->
+        <h3> Mock Test Results</h3>
+        <div class="round" id="total"
+          data-value="0.50"
+          data-size="250"
+          data-thickness="15">
+          <strong></strong>
+          <span><i class="fa fa-laptop" aria-hidden="true"></i> Total</span>
         </div>
-        
-        <!-- <h3 id="analysis">Section Based Score</h3> -->
-        <div id="htmlscore"><h5>HTML</h5>
-            <h4 id="htmlScoreCard">0</h4>
+      <!-- </div> -->
+      <div class="col-md-3" style="width: 12.499999995%"></div>
+      <div class="col-md-3">		
+        <div class="round" id="html"
+          data-value="0.74"
+          data-size="200"
+          data-thickness="10">
+          <strong></strong>
+           <span><i class="fa fa-html5" aria-hidden="true"></i> HTML  </span>
         </div>
-        <div id="cssScore"><h5>CSS</h5>
-            <h4 id="cssScoreCard">0</h4>
-        </div>
-        <div id="jsScore"><h5><h5>JSCRIPT</h5></h5>
-            <h4 id="jsScoreCard">0</h4>
-        </div>
-      
       </div>
-         
-    </body>
-    <script src="result.js"></script>
+      <div class="col-md-3">		
+        <div class="round" id="css"
+          data-value="0.65"
+          data-size="200"
+          data-thickness="10">
+          <strong></strong>
+          <span><i class="fa fa-css3" aria-hidden="true"></i>CSS </span>
+        </div>
+      </div>
+      <div class="col-md-3">		
+        <div class="round" id="js"
+          data-value="0.95"
+          data-size="200"
+          data-thickness="10">
+          <strong></strong>
+          <span><i class="fa fa-jsfiddle" aria-hidden="true"></i> JavaScript </span>
+        </div>
+      </div>
+    </div>	
+  </div>
+  <!-- <button class="btn" onClick="Circlle('.round');">Refresh</button> -->
+</section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js'></script>
+<script  src="result.js"></script>
+ 
+</body>
 </html>
