@@ -1,7 +1,33 @@
-// $("document").ready(function(){
-//    localStorage.clear();
-// })
-
+let htmlAr = [];
+let cssAr = [];
+let jsAr = [];
+//Ajax request is made to receive all the questions from mongodb database using node api.
+$(document).ready(function(){
+    $.ajax({
+        url:'http://localhost:9000/',
+        type: 'GET',
+        success:function(data){
+           //Filtering of question from a pool of multiple type questions
+            let count1 = -1;
+            let htmlQuestions = data.filter(dt=>{count1++
+                return dt["q"+count1]["type"] === 'html';
+             })
+             randomPicker(htmlQuestions,htmlAr);//Filtered question of particular type and a empty array for that type is passed as parameter
+             count1 = -1;
+             let cssQuestions = data.filter(dt=>{count1++
+                return dt["q"+count1]["type"] === 'css';
+             })
+             randomPicker(cssQuestions,cssAr);//Filtered question of particular type and a empty array for that type is passed as parameter
+            count1 = -1;
+             let jsQuestions = data.filter(dt=>{count1++
+                return dt["q"+count1]["type"] === 'js';
+             })
+             randomPicker(jsQuestions,jsAr);//Filtered question of particular type and a empty array for that type is passed as parameter
+        }
+    })
+ 
+  });
+//If the localstorage has the particular item then opacity of that section is reduced to indicate it is not clickable.
 if(localStorage.getItem("htm")==="yes")
     $("#htm").css("opacity",0.5);
  
@@ -11,123 +37,41 @@ if(localStorage.getItem("htm")==="yes")
  if(localStorage.getItem("js")==="yes")
     $("#jst").css("opacity",0.5);
 
- let count = 1;
-$("#htm").click(function(){
-    localStorage.setItem("htm","yes");
-    localStorage.setItem("sec",1);
+    //Only if the particular section is being clicked for first time then user gets navigated to that page
+    $("#htm").click(()=>{
+      if(!localStorage.hasOwnProperty("htm"))
+      {
+      localStorage.setItem("htm","yes");
+      localStorage.setItem("htmlArray",JSON.stringify(htmlAr));
+     location.href='questions.html?html';
+      }
+   })
+  
+  $("#cs").click(()=>{
+   if(!localStorage.hasOwnProperty("cs"))
+   {
+     localStorage.setItem("cs","yes");
+     localStorage.setItem("cssArray",JSON.stringify(cssAr));
+     location.href='questions.html?css';
+   }
+  })
+  
+  
+  $("#jst").click(function(){
+   if(!localStorage.hasOwnProperty("js"))
+   {
+     localStorage.setItem("js","yes");
+     localStorage.setItem("jsArray",JSON.stringify(jsAr));
+     location.href='questions.html?js';
+   }
+  })
 
-    for(let i = 1;i <= 10;i++)
-    {
-    getJSONHtml();
+
+//This function generate ten random question from a pool of  multiple questions which are all of different type.
+let randomPicker=(json,ar)=>{
+    for(let i = 0;i < 10;i++){
+    let randIndex = Math.floor(Math.random()*json.length)
+    ar.push(json[randIndex])
+    json.splice(randIndex,1);
     }
-    
-    let delay = 1000; 
-    setTimeout(function(){ location.href='questions.html'; }, delay);
-   //  console.log("here1")
-   // location.href='questions.html'; 
-   
- })
-let count1 = 11;
-$("#cs").click(function(){
-   localStorage.setItem("cs","yes");
-    localStorage.setItem("sec",2);
-
-    
-    for(let i = 11;i <= 20;i++)
-    getJSONCss();
-
-    let delay = 1000; 
-    setTimeout(function(){ location.href='questions.html'; }, delay);
-
-})
-
-let count2 = 21;
-$("#jst").click(function(){
-   localStorage.setItem("js","yes");
-    localStorage.setItem("sec",3);
-
-    for(let i = 11;i <= 20;i++)
-    getJSONJs();
-
-    let delay = 1000; 
-    setTimeout(function(){ location.href='questions.html'; }, delay);
-})
- 
-function getJSONHtml(){
-   $.getJSON('questions.json',function(json){
-       obj = json;
-       const keys = Object.keys(obj);
-       let randIndex = Math.floor(Math.random()*keys.length)
-       let b =  obj["q"+randIndex];
-       flag = true;
-       while(flag)
-       {
-           if(b["type"]==="html" && !localStorage.hasOwnProperty("q"+randIndex))
-           {
-            flag = false;
-           }
-           else{
-               randIndex = Math.floor(Math.random()*keys.length);
-               b =  obj["q"+randIndex];
-           }
-       }
-      
-       localStorage.setItem(count,JSON.stringify(b));
-       localStorage.setItem("q"+randIndex,"yes");
-       count++;
-   })
-}
-
-
-
-function getJSONCss(){
-   $.getJSON('questions.json',function(json){
-       obj = json;
-       const keys = Object.keys(obj);
-       let randIndex = Math.floor(Math.random()*keys.length)
-       let b =  obj["q"+randIndex];
-       flag = true;
-       while(flag)
-       {
-           if(b["type"]==="css" && !localStorage.hasOwnProperty("q"+randIndex))
-           {
-            flag = false;
-           }
-           else{
-               randIndex = Math.floor(Math.random()*keys.length);
-               b =  obj["q"+randIndex];
-           }
-       }
-      
-       localStorage.setItem(count1,JSON.stringify(b));
-       localStorage.setItem("q"+randIndex,"yes");
-       count1++;
-   })
-}
-
-
-function getJSONJs(){
-   console.log(count)
-   $.getJSON('questions.json',function(json){
-       obj = json;
-       const keys = Object.keys(obj);
-       let randIndex = Math.floor(Math.random()*keys.length)
-       let b =  obj["q"+randIndex];
-       flag = true;
-       while(flag)
-       {
-           if(b["type"]==="js" && !localStorage.hasOwnProperty("q"+randIndex))
-           {
-            flag = false;
-           }
-           else{
-               randIndex = Math.floor(Math.random()*keys.length);
-               b =  obj["q"+randIndex];
-           }
-       }
-      
-       localStorage.setItem(count2,JSON.stringify(b));
-       localStorage.setItem("q"+randIndex,"yes");
-       count2++;
-   })
 }
