@@ -1,0 +1,33 @@
+
+body{
+    background-color:#00E676;
+}
+.flex-container{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+    background-color:#00E676;
+   
+  }
+/* image */
+#image{
+    /* align-items: center; */
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin: 6em 0 0 0 ;
+    /* margin-left: 28em; */
+}
+/* Start button */
+#start{
+    position: relative;
+    /* align-items: center; */
+    border-radius: 40px ;
+    border-width: 5px;
+    border-color: white;
+    color:white;
+    /* margin-left: 28em; */
+    margin-top: 6em;
+    width: 8em;
+    height: 3em;
+}

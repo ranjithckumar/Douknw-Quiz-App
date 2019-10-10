@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 
-#jst{
+#cs,#jst{
     height: 25vh;
     width: 20%;
     margin-top: 5%;
@@ -84,9 +84,11 @@
         /* border: 2px solid #00E676; */
         margin-left: 30%; 
         text-align: center;
+        cursor: pointer;
     }
        
 }
+
 
 @media screen and (max-width: 768px){
     #sectionsList
@@ -101,6 +103,7 @@
         /* border: 2px solid #00E676; */
         margin-left: 30%; 
         text-align: center;
+        cursor: pointer;
     }
          
 }
@@ -112,12 +115,13 @@
     }
     #htm,#cs,#jst{
         height: 20vh;
-        width: 40%;
+        width: 35%;
         margin-top: 5%;
         background-color: #F0F0F0;
         /* border: 2px solid #00E676; */
         margin-left: 30%; 
         text-align: center;
+        cursor: pointer;
     }
        
     }
@@ -136,6 +140,7 @@
         /* border: 2px solid #00E676; */
         margin-left: 30%; 
         text-align: center;
+        cursor: pointer;
     }
        
     }
