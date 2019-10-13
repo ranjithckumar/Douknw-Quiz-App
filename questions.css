@@ -1,43 +1,42 @@
-
+*{
+    margin:0;
+    padding:0;
+}
   #time{
       float:inline-end;
-      margin-left:25em;
+      margin: 0 0 0 8em;
       font-weight: bold;
       font-size: 3vw;
   }
   #section-number{
       float: inline-start;
       font-weight: bold;
-      font-size: 3vw;
+      font-size: 40px;
   }
   #num,#end-num{
-      margin-top: 5em;
+      margin-top: 2px;
       font-weight: bold;
       font-size: 2vw;
   } 
   #number{
-      margin-top: 10px;
+      margin-top: 2px;
 
+  }
+  .fa {
+    cursor: pointer;
+    color:rgba(34, 90, 243, 0.801);
   }
   #img-backward{
-      width: 30px;
-      height: 30px;
-      border-radius:50%;
-      border-color: darkgray;
-      margin-left:35px;
+      margin: 40px 0 0 80px;
   }
   #img-forward{
-
-        width: 30px;
-        transform: rotate(180deg);
-        height: 30px;
-        border-radius:50%;
-        border-color:black;
-        margin-left:30px;
-  }
+    margin: 40px 0 0 80px;
+}
+ 
+   
   #question{
       flex-flow: row;
-      margin-top: 2%;
+      margin-top: 1%;
       font-size: 2.5vw;
   }
  
@@ -61,17 +60,23 @@
     text-align: center;
     cursor: pointer;
 }
-#submitButton,#sectionButton{
+
+#sectionButton{
     width: 8rem;
     height: 8vh;
-    margin-top:5%;
-    margin-right: 3%;
     border-radius: 5px;
-    margin-bottom: 5%;
+    margin:0 0 1.5% 2%;
+    cursor: pointer;
+}
+#submitButton{
+    width: 8rem;
+    height: 8vh;
+    border-radius: 5px;
+    margin:0 0 1.5% 32%;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px){
+/* @media only screen and (max-width: 1200px){
     #time{
         float:inline-end;
         margin-left:20em;
@@ -191,5 +196,5 @@
         font-size: 3vw;
     }
 }
-
+ */
 
