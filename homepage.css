@@ -1,12 +1,12 @@
 
 body{
-    background-color:#00E676;
+    background-color:#4767CF;
 }
 .flex-container{
     display: flex;
   align-items: center;
   flex-direction: column;
-    background-color:#00E676;
+    background-color:#4767CF;
    
   }
 /* image */
@@ -15,7 +15,7 @@ body{
     object-fit: contain;
     width: 100%;
     height: 100%;
-    margin: 6em 0 0 0 ;
+    margin: 8em 0 0 0 ;
     /* margin-left: 28em; */
 }
 /* Start button */
@@ -27,7 +27,7 @@ body{
     border-color: white;
     color:white;
     /* margin-left: 28em; */
-    margin-top: 6em;
+    margin-top: 12em;
     width: 8em;
     height: 3em;
 }
