@@ -76,125 +76,159 @@
     cursor: pointer;
 }
 
-/* @media only screen and (max-width: 1200px){
-    #time{
-        float:inline-end;
-        margin-left:20em;
-        font-weight: bold;
-        font-size: 3vw;
-    }
-    #section-number{
-        float: inline-start;
-        font-weight: bold;
-        font-size: 3vw;
-    }
-}
+
 @media only screen and (max-width: 1125px) and (min-width:961px) {
-    #time{
-        float:inline-end;
-        margin-left:20em;
-        font-weight: bold;
-        font-size: 3vw;
+    #submitButton{
+        margin:0 0 1.5% 20%;
     }
-    #section-number{
-        float: inline-start;
-        font-weight: bold;
-        font-size: 3vw;
+    #time{
+        margin: 0 0 0 7em;
     }
 }
 @media only screen and (max-width: 960px){
+    #submitButton{
+        margin:0 0 1.5% 20%;
+    }
     #time{
-        float:inline-end;
-        margin-left:25em;
-        font-weight: bold;
-        font-size: 3vw;
-    }
-    #section-number{
-        float: inline-start;
-        font-weight: bold;
-        font-size: 3vw;
-    }
-    #submitButton,#sectionButton{
-        width: 10rem;
-        height: 8vh;
-        margin-top:5%;
-        margin-right: 3%;
-        margin-bottom: 5%;
-        cursor: pointer;
+        margin: 0 0 0 6em;
     }
 }
 @media only screen and (max-width: 960px)and (min-width:780px) {
+    #submitButton{
+        margin:0 0 1.5% 15%;
+        width: 8rem;
+        height: 8vh;
+    }
     #time{
-        float:inline-end;
-        margin-left:20em;
-        font-weight: bold;
-        font-size: 3vw;
+        margin: 0 0 0 4em;
     }
     #section-number{
         float: inline-start;
         font-weight: bold;
-        font-size: 3vw;
-    }
-    #submitButton,#sectionButton{
-        width: 10rem;
-        height: 8vh;
-        margin-top:5%;
-        margin-right: 3%;
-        margin-bottom: 5%;
-        cursor: pointer;
+        font-size: 35px;
     }
 }
 @media  screen and (max-width: 793px) and (min-width:620px){
+    #submitButton{
+        width: 7rem;
+        height: 7vh;
+        margin: 5px 0 0 100px;
+    }
+    #sectionButton{
+        width: 7rem;
+        height: 7vh;
+        margin: 5px 0 0 0;
+    }
     #time{
-        float:inline-end;
-        margin-left:20em;
-        font-weight: bold;
-        font-size: 3vw;
+        margin: 0 0 0 3em;
     }
     #section-number{
         float: inline-start;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 20px;
+    }
+    #question{
+        flex-flow: row;
+        margin-top: 1%;
+        font-size: 20px;;
     }
 }
 @media  screen and (max-width: 633px) and (min-width:460px){
+    #submitButton{
+        width: 7rem;
+        height: 7vh;
+        margin: 5px 0 0 28px;
+    }
+    #sectionButton{
+        width: 7rem;
+        height: 7vh;
+        margin: 5px 0 0 0;
+    }
     #time{
-        float:inline-end;
-        margin-left:20em;
+        margin: 0 0 0 2em;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 25px;
     }
     #section-number{
         float: inline-start;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 25px;
     }
+    #num,#end-num{
+        margin-top: 2px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #question{
+        flex-flow: row;
+        margin-top: 1%;
+        font-size: 15px;;
+    }
+    
 }
 @media  screen and (max-width: 473px) and (min-width:350px){
+    #submitButton{
+        width: 6.8rem;
+        height: 6.8vh;
+        margin: 5px 0 0 20px;
+    }
+    #sectionButton{
+        width: 6.8rem;
+        height: 6.8vh;;
+        margin: 5px 0 0 0;
+    }
     #time{
-        float:inline-end;
-        margin-left:20em;
+        margin: 0 0 0 2em;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 20px;
     }
     #section-number{
         float: inline-start;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 15px;
+    }
+    #num,#end-num{
+        margin-top: 2px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    #question{
+        flex-flow: row;
+        margin-top: 1%;
+        font-size: 15px;;
     }
 }
 @media  screen and (max-width: 394px) and (min-width:240px){
+    #submitButton{
+        width: 5rem;
+        height: 6.8vh;
+        margin: 5px 0 0 10px;
+    }
+    #sectionButton{
+        width: 6rem;
+        height: 6.8vh;;
+        margin: 5px 0 0 0;
+    }
     #time{
-        float:inline-end;
-        margin-left:20em;
+        margin: 0 0 0 5px;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 20px;
     }
     #section-number{
         float: inline-start;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 15px;
+    }
+    #num,#end-num{
+        margin-top: 2px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    #question{
+        flex-flow: row;
+        margin-top: 1%;
+        font-size: 12px;;
     }
 }
- */
+
 
