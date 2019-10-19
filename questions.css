@@ -43,7 +43,7 @@
      font-size: 22px;
  }
   #option1{
-      width: 25rem;
+      width: 28rem;
       height: 7vh;
       border:2px solid #2294F3;
       border-radius: 15px;
@@ -53,7 +53,7 @@
       cursor: pointer;
   }
   #option2,#option3,#option4{
-    width: 25rem;
+    width: 28rem;
     height: 7vh;
     border:2px solid #2294F3;
     border-radius: 15px;
