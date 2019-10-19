@@ -7,23 +7,22 @@ $(document).ready(function(){
         url:'http://localhost:9000/',
         type: 'GET',
         success:function(data){
-           //Filtering of question from a pool of multiple type questions
-            let count1 = -1;
-            let htmlQuestions = data.filter(dt=>{count1++
-                return dt["q"+count1]["type"] === 'html';
-             })
-             randomPicker(htmlQuestions,htmlAr);//Filtered question of particular type and a empty array for that type is passed as parameter
-             count1 = -1;
-             let cssQuestions = data.filter(dt=>{count1++
-                return dt["q"+count1]["type"] === 'css';
-             })
-             randomPicker(cssQuestions,cssAr);//Filtered question of particular type and a empty array for that type is passed as parameter
-            count1 = -1;
-             let jsQuestions = data.filter(dt=>{count1++
-                return dt["q"+count1]["type"] === 'js';
-             })
-             randomPicker(jsQuestions,jsAr);//Filtered question of particular type and a empty array for that type is passed as parameter
-        }
+         //Filtering of question from a pool of multiple type questions
+          let htmlQuestions = data.filter(dt=>{
+              return dt[Object.getOwnPropertyNames(dt)[1]]["type"] === 'html';
+           })
+           randomPicker(htmlQuestions,htmlAr);//Filtered question of particular type and a empty array for that type is passed as parameter
+           count1 = -1;
+           let cssQuestions = data.filter(dt=>{
+              return dt[Object.getOwnPropertyNames(dt)[1]]["type"] === 'css';
+           })
+           randomPicker(cssQuestions,cssAr);//Filtered question of particular type and a empty array for that type is passed as parameter
+          count1 = -1;
+           let jsQuestions = data.filter(dt=>{
+              return dt[Object.getOwnPropertyNames(dt)[1]]["type"] === 'js';
+           })
+           randomPicker(jsQuestions,jsAr);//Filtered question of particular type and a empty array for that type is passed as parameter
+      }
     })
  
   });
